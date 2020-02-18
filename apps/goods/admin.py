@@ -3,7 +3,7 @@ from apps.goods.models import GoodsType
 # Register your models here.
 
 from django.core.cache import cache
-from apps.goods.models import GoodsType,IndexPromotionBanner,IndexGoodsBanner,IndexTypeGoodsBanner
+from apps.goods.models import GoodsType,IndexPromotionBanner,IndexGoodsBanner,IndexTypeGoodsBanner,GoodsSKU
 
 
 
@@ -73,9 +73,12 @@ class IndexTypeGoodsBannerAdmin(BaseModelAdmin):
 
 class IndexPromotionBannerAdmin(BaseModelAdmin):
     pass
+class IndexGoods_skuAdmin(BaseModelAdmin):
+    pass
 
 
 admin.site.register(GoodsType, GoodsTypeAdmin)
 admin.site.register(IndexGoodsBanner, IndexGoodsBannerAdmin)
 admin.site.register(IndexTypeGoodsBanner, IndexTypeGoodsBannerAdmin)
 admin.site.register(IndexPromotionBanner, IndexPromotionBannerAdmin)
+admin.site.register(GoodsSKU,IndexGoods_skuAdmin)

@@ -1,0 +1,982 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 09:19:44 2020] ***
+compiled with version: 5.4.0 20160609 on 17 February 2020 03:38:26
+os: Linux-4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019
+nodename: instance-2vjzgrd5
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/Fresh_farmers
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/sunong/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Fresh_farmers
+your processes number limit is 7833
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39487 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.10 (default, Dec 19 2019, 23:04:32)  [GCC 5.4.0 20160609]
+PEP 405 virtualenv detected: /root/.virtualenvs/sunong
+Set PythonHome to /root/.virtualenvs/sunong
+Python main interpreter initialized at 0x1d4f290
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d4f290 pid: 25938 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25938)
+spawned uWSGI worker 1 (pid: 25940, cores: 2)
+spawned uWSGI worker 2 (pid: 25941, cores: 2)
+spawned uWSGI worker 3 (pid: 25942, cores: 2)
+spawned uWSGI worker 4 (pid: 25943, cores: 2)
+spawned uWSGI http 1 (pid: 25944)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25942|app: 0|req: 1/1] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:19:44 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4395 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (1 switches on core 0)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 39678] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 09:20:18 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 25942|app: 0|req: 2/2] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:20:16 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 1953 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+cart_1
+[pid: 25943|app: 0|req: 1/3] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:40 2020] GET / => generated 16588 bytes in 603 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 2/4] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:40 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+cart_1
+[pid: 25942|app: 0|req: 3/5] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:45 2020] GET / => generated 16588 bytes in 245 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 4/6] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:45 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+cart_1
+[pid: 25943|app: 0|req: 3/7] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:46 2020] GET / => generated 16588 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 5/8] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:46 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+cart_1
+cart_1
+[pid: 25942|app: 0|req: 6/9] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:47 2020] GET / => generated 16588 bytes in 173 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25941|app: 0|req: 1/10] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:46 2020] GET / => generated 16588 bytes in 694 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 4/11] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:47 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+cart_1
+cart_1
+[pid: 25943|app: 0|req: 5/12] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:48 2020] GET / => generated 16588 bytes in 248 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 6/13] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:48 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+cart_1
+[pid: 25940|app: 0|req: 1/14] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:47 2020] GET / => generated 16588 bytes in 910 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 7/15] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:20:48 2020] GET / => generated 16588 bytes in 131 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 8/16] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:20:48 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 2/17] 120.132.1.226 () {40 vars in 868 bytes} [Tue Feb 18 09:20:49 2020] GET /user/seeyou => generated 12602 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 7/18] 120.132.1.226 () {38 vars in 809 bytes} [Tue Feb 18 09:20:50 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25941|app: 0|req: 2/19] 120.132.1.226 () {40 vars in 797 bytes} [Tue Feb 18 09:20:50 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4008 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25942|app: 0|req: 8/20] 120.132.1.226 () {40 vars in 819 bytes} [Tue Feb 18 09:21:10 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4007 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 60158] hr_write(): Broken pipe [plugins/http/http.c line 565]
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25943|app: 0|req: 9/21] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:21:59 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4009 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 10/22] 119.118.7.248 () {40 vars in 755 bytes} [Tue Feb 18 09:22:04 2020] HEAD http://123.125.114.144/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25943|app: 0|req: 11/23] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:22:30 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4007 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25943|app: 0|req: 12/24] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:23:16 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4007 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25943|app: 0|req: 13/25] 120.132.1.226 () {40 vars in 826 bytes} [Tue Feb 18 09:24:03 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 13249] hr_write(): Broken pipe [plugins/http/http.c line 565]
+cart_1
+[pid: 25943|app: 0|req: 14/26] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:25:25 2020] GET / => generated 16588 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 15/27] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:25:26 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 3/28] 120.132.1.226 () {40 vars in 868 bytes} [Tue Feb 18 09:25:44 2020] GET /user/seeyou => generated 12602 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 25942|app: 0|req: 9/29] 120.132.1.226 () {38 vars in 809 bytes} [Tue Feb 18 09:25:44 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25942|app: 0|req: 10/30] 120.132.1.226 () {40 vars in 797 bytes} [Tue Feb 18 09:25:44 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 64449] hr_write(): Broken pipe [plugins/http/http.c line 565]
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 25943|app: 0|req: 16/31] 120.132.1.226 () {40 vars in 819 bytes} [Tue Feb 18 09:26:05 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 5314] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[pid: 25943|app: 0|req: 17/32] 14.48.219.135 () {22 vars in 228 bytes} [Tue Feb 18 09:29:52 2020] GET / => generated 16491 bytes in 86 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+cart_1
+[pid: 25943|app: 0|req: 18/33] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:32:15 2020] GET / => generated 16588 bytes in 77 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 19/34] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:32:16 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+cart_1
+[pid: 25940|app: 0|req: 4/35] 120.132.1.226 () {38 vars in 804 bytes} [Tue Feb 18 09:32:16 2020] GET / => generated 16588 bytes in 114 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 20/36] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 09:32:16 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 5/37] 120.132.1.226 () {40 vars in 868 bytes} [Tue Feb 18 09:32:24 2020] GET /user/logout => generated 0 bytes in 26 msecs (HTTP/1.1 302) 5 headers in 208 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 21/38] 120.132.1.226 () {40 vars in 802 bytes} [Tue Feb 18 09:32:24 2020] GET / => generated 16491 bytes in 91 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 22/39] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 09:32:25 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 6/40] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 09:32:25 2020] GET /user/login => generated 4983 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 23/42] 120.132.1.226 () {38 vars in 686 bytes} [Tue Feb 18 09:32:26 2020] GET /static/js/zj.js => generated 77 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 11/43] 120.132.1.226 () {40 vars in 816 bytes} [Tue Feb 18 09:32:26 2020] GET /static/images/login_banner.png => generated 0 bytes in 7 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 3/43] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 09:32:26 2020] GET /static/images/icons02.png => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 12/44] 120.132.1.226 () {40 vars in 842 bytes} [Tue Feb 18 10:04:30 2020] GET /user/index.html => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 7/45] 120.132.1.226 () {38 vars in 719 bytes} [Tue Feb 18 10:04:30 2020] GET /favicon.ico => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 24/46] 120.132.1.226 () {42 vars in 859 bytes} [Tue Feb 18 10:04:44 2020] GET //static/images/logo.png => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+redis中没有缓存，开始设置缓存
+[pid: 25943|app: 0|req: 25/47] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:22:30 2020] GET / => generated 16491 bytes in 111 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 26/48] 120.132.1.226 () {42 vars in 754 bytes} [Tue Feb 18 10:22:31 2020] GET /static/css/reset.css => generated 664 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 4/49] 120.132.1.226 () {42 vars in 751 bytes} [Tue Feb 18 10:22:31 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 13/50] 120.132.1.226 () {42 vars in 759 bytes} [Tue Feb 18 10:22:31 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 14/51] 120.132.1.226 () {42 vars in 735 bytes} [Tue Feb 18 10:22:31 2020] GET /static/js/slide.js => generated 2473 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 8/52] 120.132.1.226 () {42 vars in 752 bytes} [Tue Feb 18 10:22:31 2020] GET /static/css/main.css => generated 22992 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 15/53] 120.132.1.226 () {42 vars in 779 bytes} [Tue Feb 18 10:22:31 2020] GET /static/images/logo.png => generated 9190 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25943|app: 0|req: 27/54] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:22:31 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 28/55] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:22:31 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 16/56] 120.132.1.226 () {42 vars in 800 bytes} [Tue Feb 18 10:22:32 2020] GET /static/images/icons.png => generated 5931 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 9/57] 120.132.1.226 () {42 vars in 757 bytes} [Tue Feb 18 10:22:34 2020] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25941|app: 0|req: 5/58] 120.132.1.226 () {42 vars in 823 bytes} [Tue Feb 18 10:23:08 2020] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 25941|app: 0|req: 6/59] 120.132.1.226 () {42 vars in 825 bytes} [Tue Feb 18 10:23:08 2020] GET /admin/ => generated 0 bytes in 14 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 29/60] 120.132.1.226 () {42 vars in 862 bytes} [Tue Feb 18 10:23:08 2020] GET /admin/login/?next=/admin/ => generated 1821 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 30/61] 120.132.1.226 () {42 vars in 789 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/css/base.css => generated 16378 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 10/62] 120.132.1.226 () {42 vars in 791 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/css/login.css => generated 1233 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 140 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 17/63] 120.132.1.226 () {42 vars in 801 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/css/responsive.css => generated 17944 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 18/64] 120.132.1.226 () {42 vars in 791 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/css/fonts.css => generated 423 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 11/65] 120.132.1.226 () {44 vars in 857 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 7/66] 120.132.1.226 () {44 vars in 853 bytes} [Tue Feb 18 10:23:08 2020] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 8/67] 120.132.1.226 () {42 vars in 812 bytes} [Tue Feb 18 10:23:22 2020] GET / => generated 16491 bytes in 86 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 31/68] 120.132.1.226 () {42 vars in 751 bytes} [Tue Feb 18 10:23:23 2020] GET /static/css/main.css => generated 22992 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 32/69] 120.132.1.226 () {42 vars in 758 bytes} [Tue Feb 18 10:23:23 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 33/70] 120.132.1.226 () {42 vars in 750 bytes} [Tue Feb 18 10:23:23 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 9/71] 120.132.1.226 () {42 vars in 734 bytes} [Tue Feb 18 10:23:23 2020] GET /static/js/slide.js => generated 2473 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 20/72] 120.132.1.226 () {42 vars in 778 bytes} [Tue Feb 18 10:23:23 2020] GET /static/images/logo.png => generated 9190 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 20/73] 120.132.1.226 () {42 vars in 753 bytes} [Tue Feb 18 10:23:23 2020] GET /static/css/reset.css => generated 664 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 12/74] 120.132.1.226 () {42 vars in 728 bytes} [Tue Feb 18 10:23:23 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25942|app: 0|req: 21/75] 120.132.1.226 () {42 vars in 728 bytes} [Tue Feb 18 10:23:25 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 13/76] 120.132.1.226 () {42 vars in 799 bytes} [Tue Feb 18 10:23:25 2020] GET /static/images/icons.png => generated 5931 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 10/77] 120.132.1.226 () {42 vars in 822 bytes} [Tue Feb 18 10:23:26 2020] GET /login => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 34/78] 120.132.1.226 () {42 vars in 812 bytes} [Tue Feb 18 10:23:32 2020] GET / => generated 16491 bytes in 86 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 22/79] 120.132.1.226 () {42 vars in 751 bytes} [Tue Feb 18 10:23:32 2020] GET /static/css/main.css => generated 22992 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 35/80] 120.132.1.226 () {42 vars in 753 bytes} [Tue Feb 18 10:23:32 2020] GET /static/css/reset.css => generated 664 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 11/81] 120.132.1.226 () {42 vars in 758 bytes} [Tue Feb 18 10:23:32 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 23/82] 120.132.1.226 () {42 vars in 734 bytes} [Tue Feb 18 10:23:32 2020] GET /static/js/slide.js => generated 2473 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 15/83] 120.132.1.226 () {42 vars in 778 bytes} [Tue Feb 18 10:23:32 2020] GET /static/images/logo.png => generated 9190 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 15/84] 120.132.1.226 () {42 vars in 750 bytes} [Tue Feb 18 10:23:32 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 16/85] 120.132.1.226 () {42 vars in 728 bytes} [Tue Feb 18 10:23:32 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 24/86] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:23:34 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 36/87] 120.132.1.226 () {42 vars in 800 bytes} [Tue Feb 18 10:23:34 2020] GET /static/images/icons.png => generated 5931 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 12/88] 120.132.1.226 () {38 vars in 770 bytes} [Tue Feb 18 10:23:40 2020] GET /login => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25941|app: 0|req: 13/89] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:23:43 2020] GET /user/login => generated 4983 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 17/90] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:23:43 2020] GET /static/images/icons02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25943|app: 0|req: 37/91] 120.132.1.226 () {38 vars in 686 bytes} [Tue Feb 18 10:23:43 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 25/92] 120.132.1.226 () {40 vars in 816 bytes} [Tue Feb 18 10:23:43 2020] GET /static/images/login_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 26/93] 120.132.1.226 () {40 vars in 838 bytes} [Tue Feb 18 10:23:55 2020] GET /user/register => generated 5529 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 38/94] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 10:23:55 2020] GET /static/js/register.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 27/95] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 10:23:55 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 18/96] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 10:23:55 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 14/97] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 10:23:55 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 15/98] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:23:55 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 16/99] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:23:55 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 17/100] 120.132.1.226 () {40 vars in 873 bytes} [Tue Feb 18 10:24:13 2020] GET /user/login => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 28/101] 120.132.1.226 () {38 vars in 686 bytes} [Tue Feb 18 10:24:13 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 19/102] 120.132.1.226 () {40 vars in 816 bytes} [Tue Feb 18 10:24:13 2020] GET /static/images/login_banner.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 20/103] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:24:13 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25943|app: 0|req: 39/104] 120.132.1.226 () {40 vars in 879 bytes} [Tue Feb 18 10:24:18 2020] GET /user/register => generated 5529 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 40/105] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 10:24:18 2020] GET /static/js/register.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 21/106] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 10:24:18 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25941|app: 0|req: 18/107] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 10:24:18 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 29/108] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:24:18 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 22/109] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 10:24:18 2020] GET /static/images/interval_line.png => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 30/110] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:24:18 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 19/111] 120.132.1.226 () {40 vars in 879 bytes} [Tue Feb 18 10:24:22 2020] GET /user/register => generated 5529 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 25942|app: 0|req: 31/112] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 10:24:22 2020] GET /static/js/register.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 20/113] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 10:24:22 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 23/114] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 10:24:22 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 41/115] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 10:24:22 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25943|app: 0|req: 42/116] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:24:22 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 32/117] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:24:22 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 24/118] 120.132.1.226 () {40 vars in 873 bytes} [Tue Feb 18 10:24:40 2020] GET /user/login => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 43/119] 120.132.1.226 () {38 vars in 686 bytes} [Tue Feb 18 10:24:40 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 33/120] 120.132.1.226 () {40 vars in 816 bytes} [Tue Feb 18 10:24:40 2020] GET /static/images/login_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 21/121] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:24:40 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 25/122] 120.132.1.226 () {40 vars in 879 bytes} [Tue Feb 18 10:24:44 2020] GET /user/register => generated 5529 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 44/123] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 10:24:44 2020] GET /static/js/register.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 45/124] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 10:24:44 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 26/125] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 10:24:44 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25942|app: 0|req: 35/126] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:24:44 2020] GET /static/images/register_banner.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 22/127] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:24:44 2020] GET /static/images/icons02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 35/128] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 10:24:44 2020] GET /static/images/interval_line.png => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 23/129] 120.132.1.226 () {40 vars in 902 bytes} [Tue Feb 18 10:24:48 2020] GET /admin/login/?next=/admin/ => generated 1821 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+[pid: 25942|app: 0|req: 36/130] 120.132.1.226 () {40 vars in 853 bytes} [Tue Feb 18 10:24:52 2020] GET / => generated 16491 bytes in 88 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 46/131] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 10:24:52 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25943|app: 0|req: 47/132] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:26:46 2020] GET / => generated 16491 bytes in 76 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 48/133] 120.132.1.226 () {42 vars in 754 bytes} [Tue Feb 18 10:26:46 2020] GET /static/css/reset.css => generated 664 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 0)
+[pid: 25940|app: 0|req: 27/134] 120.132.1.226 () {42 vars in 752 bytes} [Tue Feb 18 10:26:46 2020] GET /static/css/main.css => generated 22992 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 37/135] 120.132.1.226 () {42 vars in 759 bytes} [Tue Feb 18 10:26:46 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25941|app: 0|req: 25/136] 120.132.1.226 () {42 vars in 735 bytes} [Tue Feb 18 10:26:46 2020] GET /static/js/slide.js => generated 2473 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 25/137] 120.132.1.226 () {42 vars in 751 bytes} [Tue Feb 18 10:26:46 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25942|app: 0|req: 38/138] 120.132.1.226 () {42 vars in 779 bytes} [Tue Feb 18 10:26:46 2020] GET /static/images/logo.png => generated 9190 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25940|app: 0|req: 28/139] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:26:46 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 39/140] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:26:47 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 49/141] 120.132.1.226 () {42 vars in 800 bytes} [Tue Feb 18 10:26:47 2020] GET /static/images/icons.png => generated 5931 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 50/142] 120.132.1.226 () {36 vars in 687 bytes} [Tue Feb 18 10:31:26 2020] GET /static/jiaoben5673/css/index.css => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 29/143] 120.132.1.226 () {36 vars in 691 bytes} [Tue Feb 18 10:31:26 2020] GET /static/jiaoben5673/css/animate.css => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 30/144] 120.132.1.226 () {36 vars in 690 bytes} [Tue Feb 18 10:31:26 2020] GET /static/jiaoben5673/js/jquery-1.9.0.min.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 51/145] 120.132.1.226 () {36 vars in 672 bytes} [Tue Feb 18 10:31:26 2020] GET /static/jiaoben5673/js/wow.min.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 40/146] 120.132.1.226 () {36 vars in 714 bytes} [Tue Feb 18 10:31:26 2020] GET /static/jiaoben5673/img/logo-hlb.png => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 41/147] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:45:51 2020] GET / => generated 16491 bytes in 81 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 52/148] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 10:45:51 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 31/149] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:45:52 2020] GET / => generated 16491 bytes in 81 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 53/150] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 10:45:52 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25940|app: 0|req: 32/151] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:45:54 2020] GET / => generated 16491 bytes in 83 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25940|app: 0|req: 33/152] 120.132.1.226 () {42 vars in 752 bytes} [Tue Feb 18 10:45:54 2020] GET /static/css/main.css => generated 22992 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 43/153] 120.132.1.226 () {42 vars in 751 bytes} [Tue Feb 18 10:45:54 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 1)
+[pid: 25942|app: 0|req: 43/154] 120.132.1.226 () {42 vars in 759 bytes} [Tue Feb 18 10:45:54 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 54/155] 120.132.1.226 () {42 vars in 754 bytes} [Tue Feb 18 10:45:54 2020] GET /static/css/reset.css => generated 664 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 0)
+[pid: 25943|app: 0|req: 55/156] 120.132.1.226 () {42 vars in 735 bytes} [Tue Feb 18 10:45:54 2020] GET /static/js/slide.js => generated 2473 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 26/157] 120.132.1.226 () {42 vars in 779 bytes} [Tue Feb 18 10:45:54 2020] GET /static/images/logo.png => generated 9190 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25941|app: 0|req: 27/158] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:45:55 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 25942|app: 0|req: 44/159] 120.132.1.226 () {42 vars in 729 bytes} [Tue Feb 18 10:45:56 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 25943|app: 0|req: 56/160] 120.132.1.226 () {42 vars in 800 bytes} [Tue Feb 18 10:45:56 2020] GET /static/images/icons.png => generated 5931 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 25943|app: 0|req: 57/161] 120.132.1.226 () {42 vars in 757 bytes} [Tue Feb 18 10:45:58 2020] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 25944)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 10:47:09 2020] ***
+compiled with version: 5.4.0 20160609 on 17 February 2020 03:38:26
+os: Linux-4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019
+nodename: instance-2vjzgrd5
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/Fresh_farmers
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/sunong/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Fresh_farmers
+your processes number limit is 7833
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45156 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.10 (default, Dec 19 2019, 23:04:32)  [GCC 5.4.0 20160609]
+PEP 405 virtualenv detected: /root/.virtualenvs/sunong
+Set PythonHome to /root/.virtualenvs/sunong
+Python main interpreter initialized at 0x12372a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x12372a0 pid: 27824 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27824)
+spawned uWSGI worker 1 (pid: 27826, cores: 2)
+spawned uWSGI worker 2 (pid: 27827, cores: 2)
+spawned uWSGI worker 3 (pid: 27828, cores: 2)
+spawned uWSGI worker 4 (pid: 27829, cores: 2)
+spawned uWSGI http 1 (pid: 27830)
+[pid: 27829|app: 0|req: 1/1] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:47:12 2020] GET / => generated 0 bytes in 388 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 27829|app: 0|req: 2/2] 120.132.1.226 () {38 vars in 793 bytes} [Tue Feb 18 10:47:12 2020] GET /user/login?next=/ => generated 4983 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 27829|app: 0|req: 3/3] 120.132.1.226 () {38 vars in 693 bytes} [Tue Feb 18 10:47:12 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27828|app: 0|req: 1/4] 120.132.1.226 () {40 vars in 816 bytes} [Tue Feb 18 10:47:12 2020] GET /static/images/login_banner.png => generated 0 bytes in 792 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 27826|app: 0|req: 1/5] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 10:47:12 2020] GET /static/images/icons02.png => generated 0 bytes in 791 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 27829|app: 0|req: 4/6] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:47:16 2020] GET / => generated 0 bytes in 2 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 1)
+[pid: 27827|app: 0|req: 1/7] 120.132.1.226 () {38 vars in 793 bytes} [Tue Feb 18 10:47:17 2020] GET /user/login?next=/ => generated 4983 bytes in 413 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 27829|app: 0|req: 5/8] 120.132.1.226 () {38 vars in 693 bytes} [Tue Feb 18 10:47:17 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27827|app: 0|req: 2/9] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:47:18 2020] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 27829|app: 0|req: 6/10] 120.132.1.226 () {38 vars in 793 bytes} [Tue Feb 18 10:47:18 2020] GET /user/login?next=/ => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 27829|app: 0|req: 7/11] 120.132.1.226 () {38 vars in 693 bytes} [Tue Feb 18 10:47:18 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 27828|app: 0|req: 2/12] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:47:55 2020] GET / => generated 0 bytes in 16 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 27829|app: 0|req: 8/13] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 10:47:55 2020] GET /user/login?next=/ => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 27827|app: 0|req: 4/14] 120.132.1.226 () {42 vars in 796 bytes} [Tue Feb 18 10:47:55 2020] GET /static/images/logo.png => generated 9190 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 27827|app: 0|req: 4/15] 120.132.1.226 () {42 vars in 769 bytes} [Tue Feb 18 10:47:55 2020] GET /static/css/main.css => generated 22992 bytes in 13 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 27829|app: 0|req: 9/16] 120.132.1.226 () {42 vars in 771 bytes} [Tue Feb 18 10:47:55 2020] GET /static/css/reset.css => generated 664 bytes in 16 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 27828|app: 0|req: 3/17] 120.132.1.226 () {42 vars in 746 bytes} [Tue Feb 18 10:47:55 2020] GET /static/js/zj.js => generated 77 bytes in 35 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 27829|app: 0|req: 10/18] 120.132.1.226 () {42 vars in 814 bytes} [Tue Feb 18 10:47:55 2020] GET /static/images/login_banner.png => generated 175227 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 27828|app: 0|req: 4/19] 120.132.1.226 () {42 vars in 804 bytes} [Tue Feb 18 10:47:55 2020] GET /static/images/icons02.png => generated 2071 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 27830)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 10:49:54 2020] ***
+compiled with version: 5.4.0 20160609 on 17 February 2020 03:38:26
+os: Linux-4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019
+nodename: instance-2vjzgrd5
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/Fresh_farmers
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/sunong/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Fresh_farmers
+your processes number limit is 7833
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35970 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.10 (default, Dec 19 2019, 23:04:32)  [GCC 5.4.0 20160609]
+PEP 405 virtualenv detected: /root/.virtualenvs/sunong
+Set PythonHome to /root/.virtualenvs/sunong
+Python main interpreter initialized at 0xd502a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xd502a0 pid: 27998 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27998)
+spawned uWSGI worker 1 (pid: 28000, cores: 2)
+spawned uWSGI worker 2 (pid: 28001, cores: 2)
+spawned uWSGI worker 3 (pid: 28002, cores: 2)
+spawned uWSGI worker 4 (pid: 28003, cores: 2)
+spawned uWSGI http 1 (pid: 28004)
+[pid: 28003|app: 0|req: 1/1] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:49:58 2020] GET / => generated 0 bytes in 404 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 28003|app: 0|req: 2/2] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 10:49:58 2020] GET /user/login?next=/ => generated 4983 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 3/3] 120.132.1.226 () {42 vars in 771 bytes} [Tue Feb 18 10:49:58 2020] GET /static/css/reset.css => generated 664 bytes in 20 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 0)
+[pid: 28002|app: 0|req: 2/4] 120.132.1.226 () {42 vars in 796 bytes} [Tue Feb 18 10:49:58 2020] GET /static/images/logo.png => generated 9190 bytes in 835 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28000|app: 0|req: 1/5] 120.132.1.226 () {42 vars in 769 bytes} [Tue Feb 18 10:49:58 2020] GET /static/css/main.css => generated 22992 bytes in 855 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28002|app: 0|req: 2/6] 120.132.1.226 () {42 vars in 746 bytes} [Tue Feb 18 10:49:58 2020] GET /static/js/zj.js => generated 77 bytes in 858 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 4/7] 120.132.1.226 () {42 vars in 814 bytes} [Tue Feb 18 10:49:59 2020] GET /static/images/login_banner.png => generated 175227 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 28000|app: 0|req: 2/8] 120.132.1.226 () {42 vars in 804 bytes} [Tue Feb 18 10:49:59 2020] GET /static/images/icons02.png => generated 2071 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28003|app: 0|req: 5/9] 120.132.1.226 () {42 vars in 813 bytes} [Tue Feb 18 10:50:01 2020] GET / => generated 0 bytes in 2 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 28001|app: 0|req: 1/10] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 10:50:01 2020] GET /user/login?next=/ => generated 4983 bytes in 409 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 6/11] 120.132.1.226 () {42 vars in 771 bytes} [Tue Feb 18 10:50:02 2020] GET /static/css/reset.css => generated 664 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 0)
+[pid: 28000|app: 0|req: 3/12] 120.132.1.226 () {42 vars in 769 bytes} [Tue Feb 18 10:50:02 2020] GET /static/css/main.css => generated 22992 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28002|app: 0|req: 3/13] 120.132.1.226 () {42 vars in 796 bytes} [Tue Feb 18 10:50:02 2020] GET /static/images/logo.png => generated 9190 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28003|app: 0|req: 7/14] 120.132.1.226 () {42 vars in 746 bytes} [Tue Feb 18 10:50:02 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 8/15] 120.132.1.226 () {42 vars in 804 bytes} [Tue Feb 18 10:50:02 2020] GET /static/images/icons02.png => generated 2071 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28001|app: 0|req: 2/16] 120.132.1.226 () {42 vars in 814 bytes} [Tue Feb 18 10:50:02 2020] GET /static/images/login_banner.png => generated 175227 bytes in 11 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 28003|app: 0|req: 9/17] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 10:50:05 2020] GET /user/login?next=/ => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 10/18] 120.132.1.226 () {42 vars in 771 bytes} [Tue Feb 18 10:50:05 2020] GET /static/css/reset.css => generated 664 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 0)
+[pid: 28001|app: 0|req: 3/19] 120.132.1.226 () {42 vars in 769 bytes} [Tue Feb 18 10:50:05 2020] GET /static/css/main.css => generated 22992 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28002|app: 0|req: 4/20] 120.132.1.226 () {42 vars in 746 bytes} [Tue Feb 18 10:50:05 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28000|app: 0|req: 4/21] 120.132.1.226 () {42 vars in 796 bytes} [Tue Feb 18 10:50:05 2020] GET /static/images/logo.png => generated 9190 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28000|app: 0|req: 5/22] 120.132.1.226 () {42 vars in 814 bytes} [Tue Feb 18 10:50:05 2020] GET /static/images/login_banner.png => generated 175227 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 28003|app: 0|req: 11/23] 120.132.1.226 () {42 vars in 804 bytes} [Tue Feb 18 10:50:05 2020] GET /static/images/icons02.png => generated 2071 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28001|app: 0|req: 4/24] 120.132.1.226 () {42 vars in 774 bytes} [Tue Feb 18 10:50:07 2020] GET /favicon.ico => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28003|app: 0|req: 12/25] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:51:19 2020] GET / => generated 0 bytes in 2 msecs (HTTP/1.1 302) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 28003|app: 0|req: 13/26] 120.132.1.226 () {38 vars in 793 bytes} [Tue Feb 18 10:51:19 2020] GET /user/login?next=/ => generated 4983 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28001|app: 0|req: 5/27] 120.132.1.226 () {38 vars in 693 bytes} [Tue Feb 18 10:51:20 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 28004)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 10:58:41 2020] ***
+compiled with version: 5.4.0 20160609 on 17 February 2020 03:38:26
+os: Linux-4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019
+nodename: instance-2vjzgrd5
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/Fresh_farmers
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/sunong/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Fresh_farmers
+your processes number limit is 7833
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46199 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.10 (default, Dec 19 2019, 23:04:32)  [GCC 5.4.0 20160609]
+PEP 405 virtualenv detected: /root/.virtualenvs/sunong
+Set PythonHome to /root/.virtualenvs/sunong
+Python main interpreter initialized at 0x13392a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x13392a0 pid: 28509 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28509)
+spawned uWSGI worker 1 (pid: 28511, cores: 2)
+spawned uWSGI worker 2 (pid: 28512, cores: 2)
+spawned uWSGI worker 3 (pid: 28513, cores: 2)
+spawned uWSGI worker 4 (pid: 28514, cores: 2)
+spawned uWSGI http 1 (pid: 28515)
+[pid: 28512|app: 0|req: 1/1] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 10:58:46 2020] GET / => generated 16491 bytes in 600 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 2/2] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 10:58:47 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 1/3] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 10:58:48 2020] GET /user/register => generated 5529 bytes in 388 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 2/4] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 10:58:49 2020] GET /static/js/register.js => generated 0 bytes in 11 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 3/5] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 10:58:49 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 4/6] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 10:58:49 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 1/7] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 10:58:49 2020] GET /static/images/logo02.png => generated 0 bytes in 764 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 1/8] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 10:58:49 2020] GET /static/js/zj.js => generated 77 bytes in 777 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 5/9] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 10:58:57 2020] POST /user/register => generated 0 bytes in 322 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 6/10] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 10:58:57 2020] GET / => generated 16491 bytes in 296 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 7/11] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 10:58:58 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 3/12] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 11:00:04 2020] GET / => generated 16491 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 4/13] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 11:00:04 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 2/14] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 11:00:06 2020] GET /user/register => generated 5529 bytes in 49 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 5/15] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 11:00:06 2020] GET /static/js/register.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 8/16] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 11:00:06 2020] GET /static/js/zj.js => generated 77 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 2/17] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 11:00:06 2020] GET /static/images/logo02.png => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 9/18] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 11:00:06 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 3/19] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 11:00:06 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 3/20] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 11:00:17 2020] POST /user/register => generated 0 bytes in 309 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 10/21] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 11:00:17 2020] GET / => generated 16491 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 11/22] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 11:00:18 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+redis中没有缓存，开始设置缓存
+[pid: 28514|app: 0|req: 12/23] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 11:48:45 2020] GET / => generated 16491 bytes in 115 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 13/24] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 11:48:45 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 4/25] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 11:48:47 2020] GET /user/register => generated 5529 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 14/27] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 11:48:47 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 7/27] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 11:48:47 2020] GET /static/js/register.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 7/28] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 11:48:47 2020] GET /static/js/zj.js => generated 77 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 5/29] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 11:48:47 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 4/30] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 11:48:47 2020] GET /static/images/interval_line.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 5/31] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 11:48:55 2020] POST /user/register => generated 0 bytes in 286 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 15/32] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 11:48:55 2020] GET / => generated 16491 bytes in 127 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 16/33] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 11:48:55 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 17/34] 223.104.212.167 () {38 vars in 936 bytes} [Tue Feb 18 12:44:45 2020] GET / => generated 16491 bytes in 90 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 8/35] 223.104.212.167 () {40 vars in 937 bytes} [Tue Feb 18 12:44:45 2020] GET /static/css/reset.css => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 18/36] 223.104.212.167 () {40 vars in 935 bytes} [Tue Feb 18 12:44:45 2020] GET /static/css/main.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 6/37] 223.104.212.167 () {40 vars in 942 bytes} [Tue Feb 18 12:44:45 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 9/38] 223.104.212.167 () {38 vars in 857 bytes} [Tue Feb 18 12:44:45 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 6/39] 223.104.212.167 () {40 vars in 934 bytes} [Tue Feb 18 12:44:45 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 7/40] 223.104.212.167 () {40 vars in 918 bytes} [Tue Feb 18 12:44:45 2020] GET /static/js/slide.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 19/41] 223.104.212.167 () {38 vars in 857 bytes} [Tue Feb 18 12:44:45 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 7/42] 223.104.212.167 () {40 vars in 985 bytes} [Tue Feb 18 12:44:45 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 8/43] 223.104.212.167 () {40 vars in 1006 bytes} [Tue Feb 18 12:44:45 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 10/44] 223.104.212.167 () {38 vars in 908 bytes} [Tue Feb 18 12:44:46 2020] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 11/45] 223.104.212.167 () {40 vars in 1000 bytes} [Tue Feb 18 12:44:52 2020] GET /user/seeyou => generated 12602 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 12/46] 223.104.212.167 () {38 vars in 969 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 8/47] 223.104.212.167 () {38 vars in 929 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/css/bootstrap.css => generated 178152 bytes in 34 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 21/48] 223.104.212.167 () {38 vars in 935 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/css/font-awesome.css => generated 37414 bytes in 53 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 13/49] 223.104.212.167 () {38 vars in 965 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/g2.jpg => generated 462392 bytes in 12 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 9/50] 223.104.212.167 () {38 vars in 921 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/css/style.css => generated 28412 bytes in 53 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+Tue Feb 18 12:44:52 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (223.104.212.167)
+OSError: write error
+[pid: 28514|app: 0|req: 21/51] 223.104.212.167 () {40 vars in 1057 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 50 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 9/52] 223.104.212.167 () {38 vars in 965 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/g1.jpg => generated 57139 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 14/53] 223.104.212.167 () {38 vars in 965 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/b3.jpg => generated 167619 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 10/54] 223.104.212.167 () {38 vars in 971 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/blog3.jpg => generated 129356 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 22/55] 223.104.212.167 () {38 vars in 971 bytes} [Tue Feb 18 12:44:52 2020] GET /static/cpts_1971_cxu/images/blog1.jpg => generated 186416 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 15/56] 223.104.212.167 () {38 vars in 971 bytes} [Tue Feb 18 12:44:53 2020] GET /static/cpts_1971_cxu/images/blog2.jpg => generated 139139 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 223.104.212.167 client_port: 18079] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 12:44:53 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (223.104.212.167)
+OSError: write error
+[pid: 28514|app: 0|req: 23/57] 223.104.212.167 () {42 vars in 959 bytes} [Tue Feb 18 12:44:53 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 124 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 0)
+[pid: 28514|app: 0|req: 25/58] 223.104.212.167 () {38 vars in 998 bytes} [Tue Feb 18 12:44:54 2020] GET /static/cpts_1971_cxu/images/banner2.jpg => generated 139139 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 25/59] 223.104.212.167 () {40 vars in 1027 bytes} [Tue Feb 18 12:44:54 2020] GET /static/cpts_1971_cxu/fonts/fontawesome-webfont.woff2?v=4.7.0 => generated 77160 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 157 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 16/60] 223.104.212.167 () {38 vars in 994 bytes} [Tue Feb 18 12:44:54 2020] GET /static/cpts_1971_cxu/images/about.jpg => generated 79569 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 17/61] 223.104.212.167 () {38 vars in 998 bytes} [Tue Feb 18 12:44:54 2020] GET /static/cpts_1971_cxu/images/banner1.jpg => generated 114240 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 26/62] 60.186.107.166 () {40 vars in 821 bytes} [Tue Feb 18 12:45:22 2020] HEAD http://123.125.114.144/ => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 18/63] 223.104.212.167 () {38 vars in 936 bytes} [Tue Feb 18 12:45:48 2020] GET / => generated 16491 bytes in 91 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 10/64] 223.104.212.167 () {40 vars in 935 bytes} [Tue Feb 18 12:45:48 2020] GET /static/css/main.css => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 27/65] 223.104.212.167 () {40 vars in 985 bytes} [Tue Feb 18 12:45:48 2020] GET /static/images/logo.png => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 19/66] 223.104.212.167 () {40 vars in 937 bytes} [Tue Feb 18 12:45:48 2020] GET /static/css/reset.css => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 11/67] 223.104.212.167 () {40 vars in 942 bytes} [Tue Feb 18 12:45:48 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 28/68] 223.104.212.167 () {38 vars in 857 bytes} [Tue Feb 18 12:45:48 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 11/69] 223.104.212.167 () {40 vars in 934 bytes} [Tue Feb 18 12:45:48 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 12/70] 223.104.212.167 () {40 vars in 918 bytes} [Tue Feb 18 12:45:48 2020] GET /static/js/slide.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 29/71] 223.104.212.167 () {40 vars in 1006 bytes} [Tue Feb 18 12:45:49 2020] GET /static/images/icons.png => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 20/72] 223.104.212.167 () {38 vars in 857 bytes} [Tue Feb 18 12:45:49 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 13/73] 223.104.212.167 () {38 vars in 908 bytes} [Tue Feb 18 12:45:49 2020] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 30/74] 61.151.178.166 () {32 vars in 559 bytes} [Tue Feb 18 12:45:52 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 21/75] 61.129.6.251 () {36 vars in 621 bytes} [Tue Feb 18 12:45:57 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 12/76] 61.129.6.251 () {36 vars in 659 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/css/style.css => generated 28412 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 13/77] 61.129.6.251 () {36 vars in 673 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/css/font-awesome.css => generated 37414 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 14/78] 61.129.6.251 () {36 vars in 667 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/css/bootstrap.css => generated 178152 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 14/79] 61.129.6.251 () {36 vars in 644 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/g1.jpg => generated 57139 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 32/80] 61.129.6.251 () {36 vars in 644 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/g2.jpg => generated 462392 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 32/81] 61.129.6.251 () {36 vars in 648 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 22/82] 61.129.6.251 () {36 vars in 644 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/b3.jpg => generated 167619 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 23/83] 61.129.6.251 () {36 vars in 650 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/blog1.jpg => generated 186416 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 33/84] 61.129.6.251 () {36 vars in 650 bytes} [Tue Feb 18 12:45:57 2020] GET /static/cpts_1971_cxu/images/blog2.jpg => generated 139139 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 24/85] 61.129.6.251 () {36 vars in 650 bytes} [Tue Feb 18 12:45:58 2020] GET /static/cpts_1971_cxu/images/blog3.jpg => generated 129356 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 34/86] 61.129.6.251 () {36 vars in 654 bytes} [Tue Feb 18 12:45:59 2020] GET /static/cpts_1971_cxu/images/banner1.jpg => generated 114240 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 61.129.6.251 client_port: 65440] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 61.129.6.251 client_port: 48288] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 61.129.6.251 client_port: 37280] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 61.129.6.251 client_port: 14756] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[pid: 28514|app: 0|req: 35/87] 117.136.7.65 () {36 vars in 1069 bytes} [Tue Feb 18 12:46:54 2020] GET /?nsukey=DSFgnlxJIXQBwQgfVk%2B1BzG%2FC2CN7Zpi39176zyHuGS98dFBoPAGj38pqPg%2BHUPAqfykGpqChN2Y4AksLAx8Gs0cXdvmq2b03k8s3FLYzf2GhpjHzGsfnPoUSVmSrFW1z1MX9xcMvsGvM6RNXaOYa9qAK2HvxoiUE0vteAIZ%2BfWNlEiyZ9V6TL9Thfe4sokY => generated 16491 bytes in 100 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 36/88] 117.136.7.65 () {38 vars in 924 bytes} [Tue Feb 18 12:46:54 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 15/89] 117.136.7.65 () {38 vars in 919 bytes} [Tue Feb 18 12:46:54 2020] GET /static/css/reset.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 25/90] 117.136.7.65 () {38 vars in 917 bytes} [Tue Feb 18 12:46:54 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 16/91] 117.136.7.65 () {38 vars in 916 bytes} [Tue Feb 18 12:46:54 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 15/92] 117.136.7.65 () {36 vars in 839 bytes} [Tue Feb 18 12:46:54 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 26/93] 117.136.7.65 () {38 vars in 900 bytes} [Tue Feb 18 12:46:54 2020] GET /static/js/slide.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 27/94] 117.136.7.65 () {38 vars in 966 bytes} [Tue Feb 18 12:46:54 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 17/95] 117.136.7.65 () {38 vars in 968 bytes} [Tue Feb 18 12:46:55 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 18/96] 117.136.7.65 () {36 vars in 1141 bytes} [Tue Feb 18 12:47:08 2020] GET /?nsukey=kzF7%2F5RrsG%2FxFSdPuALAG6GgpskXYe6dHtSVGubfaCHnUWT19df%2FQbK0nfxaje9Gyfz9dlZ8y8W7qJRtcxrFPYfyHIIulMC%2FYC%2Bon8fUC4f8DI7X8VmRXrf%2B4gKPoRTOo1kCb8K1RW6AZHm8ixRq2m2%2BrWdkDjAgiKT66Fly1c%2FzBdySRHctpOQQep8JBiz58ME57Y1yfN7dsMaS8lvZYg%3D%3D => generated 16491 bytes in 227 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 28/97] 117.136.7.65 () {38 vars in 936 bytes} [Tue Feb 18 12:47:09 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 17/98] 117.136.7.65 () {38 vars in 955 bytes} [Tue Feb 18 12:47:09 2020] GET /static/css/reset.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 17/99] 117.136.7.65 () {38 vars in 952 bytes} [Tue Feb 18 12:47:09 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 37/100] 117.136.7.65 () {38 vars in 953 bytes} [Tue Feb 18 12:47:09 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 29/101] 117.136.7.65 () {36 vars in 875 bytes} [Tue Feb 18 12:47:09 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 19/102] 117.136.7.65 () {38 vars in 960 bytes} [Tue Feb 18 12:47:09 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 18/103] 117.136.7.65 () {38 vars in 1002 bytes} [Tue Feb 18 12:47:09 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 38/104] 117.136.7.65 () {38 vars in 1004 bytes} [Tue Feb 18 12:47:09 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 39/105] 117.136.7.65 () {38 vars in 954 bytes} [Tue Feb 18 12:47:14 2020] GET /goods/6 => generated 12358 bytes in 54 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 40/106] 117.136.7.65 () {38 vars in 1236 bytes} [Tue Feb 18 12:47:16 2020] GET /goods/6?nsukey=yGbEt7IWs%2Bk1N%2B7Vme8BTqIuFgX0fW7xEc8BUAxcZkPBgHaj1Gt0c0t0UqiVirGmPC8qO1SuccdZSOsYntFYQ0LdGIJUa7M0UtPFsQeW7QSs7Uba6Ok%2F%2BfADQo3gHiCVk6DdW1PURh9CYGWkVj4i7FqdywH1g5c%2BwVQoTL9vqY1pm4w1D6VNwrRHazShCE2BXECCmiaBsNozpEy2Un%2BFiw%3D%3D => generated 12358 bytes in 47 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 41/107] 117.136.7.65 () {40 vars in 1045 bytes} [Tue Feb 18 12:47:17 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 20/108] 117.136.7.65 () {40 vars in 1047 bytes} [Tue Feb 18 12:47:17 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 31/109] 117.136.7.65 () {40 vars in 1052 bytes} [Tue Feb 18 12:47:17 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 7 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 31/110] 117.136.7.65 () {40 vars in 1094 bytes} [Tue Feb 18 12:47:17 2020] GET /static/images/logo.png => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 42/111] 117.136.7.65 () {38 vars in 967 bytes} [Tue Feb 18 12:47:17 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 19/112] 117.136.7.65 () {38 vars in 1039 bytes} [Tue Feb 18 12:47:17 2020] GET /static/images/down.png => generated 1064 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 21/113] 117.136.7.65 () {40 vars in 1096 bytes} [Tue Feb 18 12:47:17 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 32/114] 117.136.7.65 () {38 vars in 1218 bytes} [Tue Feb 18 12:47:28 2020] GET /?nsukey=bBit2ER8XOrqQ%2BYagMjKH2XQj7C6Ta8t7bcJpzXU1SbdpCTNhYgkWF6uigsVkrKWkQrpSQzq8o7ocARsDEu%2Fk5FX4vH5K6VBVo7grUbSp9JNn8Gi5his9ZMLJPsHrllFl8%2F5ZJtFCr4kEGLyP5k7%2BBPylOjAonQpDPZqHa82319stesQyi1DlJ%2BQb64ZEqhjGiWsHraJh0WYBh7M8RTNYw%3D%3D => generated 16491 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 33/115] 117.136.7.65 () {40 vars in 1038 bytes} [Tue Feb 18 12:47:28 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 43/116] 117.136.7.65 () {40 vars in 1043 bytes} [Tue Feb 18 12:47:28 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 44/117] 117.136.7.65 () {40 vars in 1035 bytes} [Tue Feb 18 12:47:28 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 22/118] 117.136.7.65 () {40 vars in 1036 bytes} [Tue Feb 18 12:47:28 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 20/119] 117.136.7.65 () {40 vars in 1085 bytes} [Tue Feb 18 12:47:28 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 21/120] 117.136.7.65 () {38 vars in 958 bytes} [Tue Feb 18 12:47:28 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 23/121] 117.136.7.65 () {40 vars in 1019 bytes} [Tue Feb 18 12:47:28 2020] GET /static/js/slide.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 24/122] 117.136.7.65 () {40 vars in 1087 bytes} [Tue Feb 18 12:47:28 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 45/123] 223.104.212.167 () {40 vars in 994 bytes} [Tue Feb 18 12:47:36 2020] GET /goods/17 => generated 12359 bytes in 43 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 34/124] 223.104.212.167 () {40 vars in 945 bytes} [Tue Feb 18 12:47:36 2020] GET /static/css/reset.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 22/125] 223.104.212.167 () {40 vars in 943 bytes} [Tue Feb 18 12:47:36 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 25/126] 223.104.212.167 () {40 vars in 985 bytes} [Tue Feb 18 12:47:36 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 35/127] 223.104.212.167 () {38 vars in 865 bytes} [Tue Feb 18 12:47:36 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 46/128] 223.104.212.167 () {40 vars in 950 bytes} [Tue Feb 18 12:47:36 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 26/129] 223.104.212.167 () {40 vars in 1006 bytes} [Tue Feb 18 12:47:36 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 23/130] 223.104.212.167 () {40 vars in 1004 bytes} [Tue Feb 18 12:47:36 2020] GET /static/images/down.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 24/131] 223.104.212.167 () {46 vars in 1016 bytes} [Tue Feb 18 12:47:39 2020] POST /cart/add => generated 48 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 25/132] 223.104.212.167 () {46 vars in 1016 bytes} [Tue Feb 18 12:47:42 2020] POST /cart/add => generated 48 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 27/133] 117.136.7.65 () {38 vars in 1126 bytes} [Tue Feb 18 12:47:51 2020] GET /?nsukey=5XlXlMrW5bWSWX%2FRCo8w8kP82QIL2JMo%2Fmddf1cVbKsFN8vYrFzHYFZxifO9uIlvvEoipkg9V28eoPFTJ1x9Vxnq4M1qKBTG%2B80ZcuxTE2qMmAOJBWJKlSlSNLjtmo%2BEWNYjxDH58QH1Nj0Xx%2BlxwaZOjh9U4AUvx7bYnuQOYk4%3D => generated 16491 bytes in 80 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 47/134] 117.136.7.65 () {38 vars in 1126 bytes} [Tue Feb 18 12:47:51 2020] GET /?nsukey=5XlXlMrW5bWSWX%2FRCo8w8kP82QIL2JMo%2Fmddf1cVbKsFN8vYrFzHYFZxifO9uIlvvEoipkg9V28eoPFTJ1x9Vxnq4M1qKBTG%2B80ZcuxTE2qMmAOJBWJKlSlSNLjtmo%2BEWNYjxDH58QH1Nj0Xx%2BlxwaZOjh9U4AUvx7bYnuQOYk4%3D => generated 16491 bytes in 82 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 48/135] 117.136.7.65 () {40 vars in 992 bytes} [Tue Feb 18 12:47:51 2020] GET /static/css/reset.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 28/136] 117.136.7.65 () {40 vars in 990 bytes} [Tue Feb 18 12:47:51 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 36/137] 117.136.7.65 () {40 vars in 997 bytes} [Tue Feb 18 12:47:51 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 29/138] 117.136.7.65 () {40 vars in 989 bytes} [Tue Feb 18 12:47:51 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 26/139] 117.136.7.65 () {38 vars in 912 bytes} [Tue Feb 18 12:47:52 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 37/140] 117.136.7.65 () {40 vars in 973 bytes} [Tue Feb 18 12:47:52 2020] GET /static/js/slide.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 38/141] 117.136.7.65 () {40 vars in 1039 bytes} [Tue Feb 18 12:47:52 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 49/142] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 12:47:52 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 30/143] 117.136.7.65 () {40 vars in 1360 bytes} [Tue Feb 18 12:47:57 2020] GET /?nsukey=5XlXlMrW5bWSWX%2FRCo8w8kP82QIL2JMo%2Fmddf1cVbKsFN8vYrFzHYFZxifO9uIlvvEoipkg9V28eoPFTJ1x9Vxnq4M1qKBTG%2B80ZcuxTE2qMmAOJBWJKlSlSNLjtmo%2BEWNYjxDH58QH1Nj0Xx%2BlxwaZOjh9U4AUvx7bYnuQOYk4%3D => generated 16491 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 39/144] 117.136.7.65 () {40 vars in 992 bytes} [Tue Feb 18 12:47:57 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 28/145] 117.136.7.65 () {40 vars in 989 bytes} [Tue Feb 18 12:47:57 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 28/146] 117.136.7.65 () {40 vars in 990 bytes} [Tue Feb 18 12:47:57 2020] GET /static/css/main.css => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 50/147] 117.136.7.65 () {40 vars in 997 bytes} [Tue Feb 18 12:47:57 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 40/148] 117.136.7.65 () {40 vars in 973 bytes} [Tue Feb 18 12:47:57 2020] GET /static/js/slide.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 31/149] 117.136.7.65 () {38 vars in 912 bytes} [Tue Feb 18 12:47:57 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 29/150] 117.136.7.65 () {40 vars in 1039 bytes} [Tue Feb 18 12:47:57 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 41/151] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 12:47:57 2020] GET /static/images/icons.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 42/152] 117.136.7.65 () {40 vars in 991 bytes} [Tue Feb 18 12:48:00 2020] GET /goods/6 => generated 12358 bytes in 41 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 51/153] 117.136.7.65 () {40 vars in 807 bytes} [Tue Feb 18 12:48:00 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 30/154] 117.136.7.65 () {40 vars in 812 bytes} [Tue Feb 18 12:48:00 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 32/155] 117.136.7.65 () {40 vars in 805 bytes} [Tue Feb 18 12:48:00 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 52/156] 117.136.7.65 () {38 vars in 727 bytes} [Tue Feb 18 12:48:00 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 43/157] 117.136.7.65 () {40 vars in 854 bytes} [Tue Feb 18 12:48:01 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 33/158] 117.136.7.65 () {40 vars in 856 bytes} [Tue Feb 18 12:48:01 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 31/159] 117.136.7.65 () {40 vars in 806 bytes} [Tue Feb 18 12:48:08 2020] GET /goods/8 => generated 12513 bytes in 207 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 44/160] 117.136.7.65 () {40 vars in 854 bytes} [Tue Feb 18 12:48:09 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 53/161] 117.136.7.65 () {40 vars in 807 bytes} [Tue Feb 18 12:48:09 2020] GET /static/css/reset.css => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 32/162] 117.136.7.65 () {40 vars in 805 bytes} [Tue Feb 18 12:48:09 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 45/163] 117.136.7.65 () {40 vars in 812 bytes} [Tue Feb 18 12:48:09 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 54/164] 117.136.7.65 () {38 vars in 727 bytes} [Tue Feb 18 12:48:09 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 34/165] 117.136.7.65 () {40 vars in 856 bytes} [Tue Feb 18 12:48:09 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 35/166] 117.136.7.65 () {38 vars in 1234 bytes} [Tue Feb 18 12:48:13 2020] GET /?nsukey=LR3QWhuypY9imw8FGVXcJNkGyP8p7iKdHmeBN6%2BJfJ64ht6DmnWV%2F%2FORufa%2B39Z7YXGBnpTX1yGUF2C94GYl0YhGC9As1IVLZqyFiwc5F7cVZ7FNM%2BptdyXeZJZjuEXfyF3HgOSkNE3LRCnnjp%2FMgwXQrfVrFJNLEwx%2Bzm9OsAbfO0KWvqU%2BoA3%2FYmrme6CTBigBjVYslQmXolCEgVdZEg%3D%3D => generated 16491 bytes in 92 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 46/167] 117.136.7.65 () {40 vars in 1044 bytes} [Tue Feb 18 12:48:14 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 33/168] 117.136.7.65 () {40 vars in 1046 bytes} [Tue Feb 18 12:48:14 2020] GET /static/css/reset.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 36/169] 117.136.7.65 () {40 vars in 1027 bytes} [Tue Feb 18 12:48:14 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 55/170] 117.136.7.65 () {40 vars in 1043 bytes} [Tue Feb 18 12:48:14 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 56/171] 117.136.7.65 () {40 vars in 1093 bytes} [Tue Feb 18 12:48:14 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 47/172] 117.136.7.65 () {38 vars in 966 bytes} [Tue Feb 18 12:48:14 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 34/173] 117.136.7.65 () {40 vars in 1051 bytes} [Tue Feb 18 12:48:14 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 57/174] 117.136.7.65 () {40 vars in 1095 bytes} [Tue Feb 18 12:48:14 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 37/175] 117.136.7.65 () {40 vars in 1053 bytes} [Tue Feb 18 12:48:26 2020] GET /user/charts => generated 0 bytes in 5 msecs (HTTP/1.1 302) 5 headers in 165 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 58/176] 117.136.7.65 () {38 vars in 1256 bytes} [Tue Feb 18 12:48:30 2020] GET /user/charts?nsukey=ciZJ8Q6AKUXVDO97h66vdNkmmwm5%2B8gk6h08BfQpVbEgXgrCmAMGbnjfNdeKGtojQSEPE9%2F6OZTQYOKOVvc%2FqBOyPRIineZqpaZplnm%2F00SV55QJ9AvSNmggZr%2FNOCVbg2%2F56EP9dzBeLXS2y8fe%2FRlcBbbwPjBsD1KYZnrwitNHONk4ctgvlR9IdVWRe1WNf%2BPlv7VZvau%2Brs1eM7aaxA%3D%3D => generated 0 bytes in 4 msecs (HTTP/1.1 302) 5 headers in 437 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 59/177] 117.136.7.65 () {38 vars in 1342 bytes} [Tue Feb 18 12:48:30 2020] GET /user/login?next=/user/charts%3Fnsukey%3DciZJ8Q6AKUXVDO97h66vdNkmmwm5%252B8gk6h08BfQpVbEgXgrCmAMGbnjfNdeKGtojQSEPE9%252F6OZTQYOKOVvc%252FqBOyPRIineZqpaZplnm%252F00SV55QJ9AvSNmggZr%252FNOCVbg2%252F56EP9dzBeLXS2y8fe%252FRlcBbbwPjBsD1KYZnrwitNHONk4ctgvlR9IdVWRe1WNf%252BPlv7VZvau%252Brs1eM7aaxA%253D%253D => generated 4983 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 48/178] 117.136.7.65 () {40 vars in 1100 bytes} [Tue Feb 18 12:48:30 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 35/179] 117.136.7.65 () {38 vars in 1020 bytes} [Tue Feb 18 12:48:30 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 49/180] 117.136.7.65 () {40 vars in 1147 bytes} [Tue Feb 18 12:48:30 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 38/181] 117.136.7.65 () {40 vars in 1098 bytes} [Tue Feb 18 12:48:30 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 36/182] 117.136.7.65 () {38 vars in 1108 bytes} [Tue Feb 18 12:48:30 2020] GET /static/images/login_banner.png => generated 175227 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 60/183] 117.136.7.65 () {38 vars in 1098 bytes} [Tue Feb 18 12:48:30 2020] GET /static/images/icons02.png => generated 2071 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 50/184] 101.91.60.106 () {32 vars in 552 bytes} [Tue Feb 18 12:48:36 2020] GET /goods/17 => generated 12359 bytes in 50 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 61/185] 101.91.60.106 () {34 vars in 646 bytes} [Tue Feb 18 12:48:37 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 62/186] 101.91.60.106 () {34 vars in 652 bytes} [Tue Feb 18 12:48:39 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+redis中没有缓存，开始设置缓存
+[pid: 28512|app: 0|req: 51/187] 117.136.7.65 () {38 vars in 1238 bytes} [Tue Feb 18 12:49:04 2020] GET /?nsukey=UkzOz0zs%2FvNFYQcd%2BieWYZNHda2oY7Q%2BZCK2U4iO4%2FhARJW%2FqhlVWmXsKWXgJA5t%2Bo34T82eSP77iJwb9aVPOgVwjtjj999m1GOz43VaujDGgkXU7mn9nYpzRb2sPYeIvjxg8wT%2BrlHcTIXrpSyGjyOJOGPft9ns1KC%2B5sqUFzPVNv0pCEU12XwBwuGXX%2BI4uxQfqSH%2FAC6YmR6OMnQKYA%3D%3D => generated 16491 bytes in 116 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 52/188] 117.136.7.65 () {40 vars in 1046 bytes} [Tue Feb 18 12:49:04 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 39/189] 117.136.7.65 () {40 vars in 1048 bytes} [Tue Feb 18 12:49:04 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 63/190] 117.136.7.65 () {40 vars in 1053 bytes} [Tue Feb 18 12:49:04 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 64/191] 117.136.7.65 () {40 vars in 1045 bytes} [Tue Feb 18 12:49:04 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 40/192] 117.136.7.65 () {40 vars in 1095 bytes} [Tue Feb 18 12:49:04 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 37/193] 117.136.7.65 () {40 vars in 1029 bytes} [Tue Feb 18 12:49:04 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 38/194] 117.136.7.65 () {38 vars in 968 bytes} [Tue Feb 18 12:49:04 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 41/195] 117.136.7.65 () {40 vars in 1096 bytes} [Tue Feb 18 12:49:05 2020] GET /static/images/icons.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 53/196] 117.136.7.65 () {40 vars in 1046 bytes} [Tue Feb 18 12:49:55 2020] GET /goods/6 => generated 12358 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 65/197] 117.136.7.65 () {38 vars in 1243 bytes} [Tue Feb 18 12:49:56 2020] GET /goods/6?nsukey=P5AQLpEP6A3nEhES3SMWMjzND5YM8R%2BlKuKLHTxYZW%2Bd9wZgjTx6z6bXwbqPP4forDKtdtGQL6bJZfJMholBTELx9HEskI26vg0JtNUneORL4IZa3ng%2BMXauJECLoybh7GSvOaZ%2BcVfRmBgCfckO8cq7iMHZP2pmu%2Fd2r3EJo2jxFP8VooB%2Bz3ADc7scFrSsVNc8vzVcf7lK2%2B%2FuD92UMQ%3D%3D => generated 12358 bytes in 36 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 66/198] 117.136.7.65 () {40 vars in 1050 bytes} [Tue Feb 18 12:49:56 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 54/199] 117.136.7.65 () {40 vars in 1097 bytes} [Tue Feb 18 12:49:56 2020] GET /static/images/logo.png => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 39/200] 117.136.7.65 () {40 vars in 1048 bytes} [Tue Feb 18 12:49:56 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 55/201] 117.136.7.65 () {40 vars in 1055 bytes} [Tue Feb 18 12:49:56 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 42/202] 117.136.7.65 () {38 vars in 970 bytes} [Tue Feb 18 12:49:56 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 43/203] 117.136.7.65 () {40 vars in 1099 bytes} [Tue Feb 18 12:49:56 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 56/204] 117.136.7.65 () {38 vars in 1214 bytes} [Tue Feb 18 12:52:16 2020] GET /?nsukey=HS%2FoUe6CoXyvOGNvjgEIzPzCDbtQ4KirbTJ3RentLMF7W%2F5eP7iiOwNrsQ6Fp%2B4Iph2KDeWFaMZqsdZEaD94H9mpTlLPNjqtWDyBoXFWMmsoaoo2o%2B0a3WKJqseKNWW91jCOPfpfO5yiKODP8aJgMHNbgYbviCwnWCjA1XzsOULk2DXOpJJ4wbpjJs7U3TY2KPnaLcAYWmvJoqIYixMUTw%3D%3D => generated 16491 bytes in 84 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 67/205] 117.136.7.65 () {40 vars in 1036 bytes} [Tue Feb 18 12:52:17 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 40/206] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 12:52:17 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 41/207] 117.136.7.65 () {40 vars in 1034 bytes} [Tue Feb 18 12:52:17 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 68/208] 117.136.7.65 () {40 vars in 1033 bytes} [Tue Feb 18 12:52:17 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 57/209] 117.136.7.65 () {40 vars in 1017 bytes} [Tue Feb 18 12:52:17 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 44/210] 117.136.7.65 () {38 vars in 956 bytes} [Tue Feb 18 12:52:17 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 45/211] 117.136.7.65 () {40 vars in 1083 bytes} [Tue Feb 18 12:52:17 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 42/212] 117.136.7.65 () {40 vars in 1085 bytes} [Tue Feb 18 12:52:17 2020] GET /static/images/icons.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 43/213] 120.132.1.226 () {38 vars in 760 bytes} [Tue Feb 18 12:52:42 2020] GET / => generated 16491 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 69/214] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 12:52:43 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 44/215] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 12:52:44 2020] GET /user/register => generated 5529 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 70/217] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 12:52:44 2020] GET /static/js/register.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 58/217] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 12:52:44 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 46/218] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 12:52:44 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 59/219] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 12:52:44 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 71/220] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 12:52:44 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 45/221] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 12:52:53 2020] POST /user/register => generated 0 bytes in 200 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 60/222] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 12:52:53 2020] GET / => generated 16491 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 72/223] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 12:52:53 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 61/224] 84.0.233.92 () {22 vars in 226 bytes} [Tue Feb 18 13:16:13 2020] GET / => generated 16491 bytes in 122 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 62/225] 117.136.7.65 () {38 vars in 1230 bytes} [Tue Feb 18 13:35:52 2020] GET /?nsukey=WTyaQYOnf%2BSCqn4v1kuCeKQsmyfGzT%2BHyLJYLmMek1P6k0FRqA2%2BqQy9tysVwgAwTj3HcId7goeVaNboEWtZW1pl%2B11ZH6CXIl%2Bw9OIQYiMZEWL0cxWHZSFMPPnARYAACGAxX45L7qy6nAeWrAyPoRiLHgT8NamIwhYjB%2FjC7JaJWt9gsJ5JQAGqd%2BRfBzu6mab4Ao6HRUk0IeoRK%2FeGgA%3D%3D => generated 16491 bytes in 87 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 73/226] 117.136.7.65 () {40 vars in 1025 bytes} [Tue Feb 18 13:35:52 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 46/227] 117.136.7.65 () {40 vars in 1044 bytes} [Tue Feb 18 13:35:52 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 47/228] 117.136.7.65 () {40 vars in 1042 bytes} [Tue Feb 18 13:35:52 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 74/229] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 13:35:52 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 63/230] 117.136.7.65 () {38 vars in 964 bytes} [Tue Feb 18 13:35:52 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 48/231] 117.136.7.65 () {40 vars in 1049 bytes} [Tue Feb 18 13:35:52 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 47/232] 117.136.7.65 () {40 vars in 1091 bytes} [Tue Feb 18 13:35:52 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 75/233] 117.136.7.65 () {40 vars in 1093 bytes} [Tue Feb 18 13:35:53 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 49/234] 117.136.7.65 () {40 vars in 1051 bytes} [Tue Feb 18 13:35:54 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 48/235] 117.136.7.65 () {38 vars in 792 bytes} [Tue Feb 18 13:35:54 2020] GET /static/cpts_1971_cxu/css/bootstrap.css => generated 178152 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 50/236] 117.136.7.65 () {38 vars in 798 bytes} [Tue Feb 18 13:35:54 2020] GET /static/cpts_1971_cxu/css/font-awesome.css => generated 37414 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 64/237] 117.136.7.65 () {38 vars in 784 bytes} [Tue Feb 18 13:35:54 2020] GET /static/cpts_1971_cxu/css/style.css => generated 28412 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 65/238] 117.136.7.65 () {38 vars in 831 bytes} [Tue Feb 18 13:35:54 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 117.136.7.65 client_port: 15496] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 117.136.7.65 client_port: 63116] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 117.136.7.65 client_port: 63372] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[pid: 28514|app: 0|req: 76/239] 117.136.7.65 () {38 vars in 1240 bytes} [Tue Feb 18 13:35:56 2020] GET /user/seeyou?nsukey=TyVwkm4lG9jFRAX1BVyRHfo8ORjw3vYwQ2CWsSUAMDwO1sOQwFCMnqCj3XfhMgV2uR7JqPSo73xFnEUGhrimcoSdnRVMbMndvgfw7yRMmbHLmAGb8B1uRY1mWIPuCKE%2BJ9kYRtsxQfPfxX3ym9t%2BKOtpNC%2BjAbUK%2FFQXP7b1FxLCCmTwrWE%2F72XbEJnt10dkn81G6TWcSVRMFg16opQ30A%3D%3D => generated 12602 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 77/240] 117.136.7.65 () {38 vars in 1030 bytes} [Tue Feb 18 13:35:56 2020] GET /static/cpts_1971_cxu/css/bootstrap.css => generated 178152 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 66/241] 117.136.7.65 () {38 vars in 1036 bytes} [Tue Feb 18 13:35:56 2020] GET /static/cpts_1971_cxu/css/font-awesome.css => generated 37414 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 78/242] 117.136.7.65 () {38 vars in 1022 bytes} [Tue Feb 18 13:35:57 2020] GET /static/cpts_1971_cxu/css/style.css => generated 28412 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 51/243] 117.136.7.65 () {38 vars in 1069 bytes} [Tue Feb 18 13:35:57 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 79/244] 117.136.7.65 () {38 vars in 1065 bytes} [Tue Feb 18 13:35:57 2020] GET /static/cpts_1971_cxu/images/g1.jpg => generated 57139 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 52/245] 117.136.7.65 () {38 vars in 1065 bytes} [Tue Feb 18 13:35:57 2020] GET /static/cpts_1971_cxu/images/b3.jpg => generated 167619 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 49/246] 117.136.7.65 () {38 vars in 1069 bytes} [Tue Feb 18 13:35:57 2020] GET /static/cpts_1971_cxu/images/blog1.jpg => generated 186416 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 80/247] 117.136.7.65 () {38 vars in 1069 bytes} [Tue Feb 18 13:35:58 2020] GET /static/cpts_1971_cxu/images/blog2.jpg => generated 139139 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 81/248] 117.136.7.65 () {38 vars in 1069 bytes} [Tue Feb 18 13:35:59 2020] GET /static/cpts_1971_cxu/images/blog3.jpg => generated 129356 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 82/249] 117.136.7.65 () {38 vars in 1056 bytes} [Tue Feb 18 13:35:59 2020] GET /static/cpts_1971_cxu/fonts/fontawesome-webfont.woff2?v=4.7.0 => generated 77160 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 157 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 83/250] 117.136.7.65 () {38 vars in 1064 bytes} [Tue Feb 18 13:36:00 2020] GET /static/cpts_1971_cxu/images/g2.jpg => generated 462392 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 84/251] 117.136.7.65 () {38 vars in 1074 bytes} [Tue Feb 18 13:36:00 2020] GET /static/cpts_1971_cxu/images/banner1.jpg => generated 114240 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 85/252] 117.136.7.65 () {38 vars in 1070 bytes} [Tue Feb 18 13:36:01 2020] GET /static/cpts_1971_cxu/images/about.jpg => generated 79569 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 86/253] 117.136.7.65 () {38 vars in 1074 bytes} [Tue Feb 18 13:36:01 2020] GET /static/cpts_1971_cxu/images/banner2.jpg => generated 139139 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 87/254] 117.136.7.65 () {38 vars in 1225 bytes} [Tue Feb 18 13:37:18 2020] GET /?nsukey=N6ThGuPXW2AEM5y1aiQDcDIWpIIG%2FFNBs31hmmQSGGRO9NkDw4VSsjB1MxdmSvSE6gSeP0ZLl%2BixuBYXcRSx2XJ3LidBafKDxji6%2FdnOPC5%2BgKT8Sn2zK4006%2F06iXxfKaBJG8vti1kq9ejBGlOjOibALjejp%2BqhLR2sETFMVHgSicry6UY5n7%2BDeQckwJajKurJE9w7mKQra7WpGlnkMQ%3D%3D => generated 16491 bytes in 93 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 88/255] 117.136.7.65 () {40 vars in 1046 bytes} [Tue Feb 18 13:37:18 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 53/256] 117.136.7.65 () {40 vars in 1039 bytes} [Tue Feb 18 13:37:18 2020] GET /static/css/main.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 67/257] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 13:37:18 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 68/258] 117.136.7.65 () {40 vars in 1038 bytes} [Tue Feb 18 13:37:18 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 54/259] 117.136.7.65 () {38 vars in 961 bytes} [Tue Feb 18 13:37:18 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 50/260] 117.136.7.65 () {40 vars in 1088 bytes} [Tue Feb 18 13:37:18 2020] GET /static/images/logo.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 69/261] 117.136.7.65 () {40 vars in 1022 bytes} [Tue Feb 18 13:37:18 2020] GET /static/js/slide.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 89/262] 117.136.7.65 () {40 vars in 1090 bytes} [Tue Feb 18 13:37:19 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 51/263] 117.136.7.65 () {40 vars in 1048 bytes} [Tue Feb 18 13:37:20 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 70/264] 117.136.7.65 () {38 vars in 830 bytes} [Tue Feb 18 13:37:20 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+Tue Feb 18 13:37:21 2020 - uwsgi_response_sendfile_do(): Broken pipe [core/writer.c line 655] during GET /static/cpts_1971_cxu/fonts/fontawesome-webfont.woff?v=4.7.0 (117.136.7.65)
+OSError: write error
+[pid: 28511|app: 0|req: 52/265] 117.136.7.65 () {38 vars in 817 bytes} [Tue Feb 18 13:37:21 2020] GET /static/cpts_1971_cxu/fonts/fontawesome-webfont.woff?v=4.7.0 => generated 0 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 0)
+[pid: 28514|app: 0|req: 90/266] 117.136.7.65 () {38 vars in 1247 bytes} [Tue Feb 18 13:37:22 2020] GET /user/seeyou?nsukey=iWCpUiPF6IzJyrjtx5CBpgVky%2FAdpZtzwEW%2BCJ3AnVu%2Bv0df7r0HdZISfjhpptJPnqnQlQuuUPWN6eEbTY3VnWlO9LadKe9juzCEGVUPX5Scipvev6qqAdlNSlz2g9dK95eb1nFPjYQoJNxHYa6wIYcqoKuVIuDYrO%2FUOQxOJb%2FLi03ASpyVDHN9NfNQnPv1%2BqKwyGEAPnOGam%2B9M7ousA%3D%3D => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 55/267] 117.136.7.65 () {38 vars in 1073 bytes} [Tue Feb 18 13:37:22 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+Tue Feb 18 13:37:39 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (117.136.7.65)
+OSError: write error
+[pid: 28513|app: 0|req: 56/268] 117.136.7.65 () {42 vars in 1095 bytes} [Tue Feb 18 13:37:39 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 204 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (1 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 28514|app: 0|req: 91/269] 117.136.7.65 () {42 vars in 998 bytes} [Tue Feb 18 13:37:42 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4015 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 117.136.7.65 client_port: 53393] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[pid: 28514|app: 0|req: 92/270] 117.136.7.65 () {38 vars in 1214 bytes} [Tue Feb 18 13:38:29 2020] GET /?nsukey=Yp3Bjq9tpTwcJJA%2BYNz0b0MV1KqrTk1XAmfm3AsN8wNeqAHfO96b9FJGp1hA8XLwNtODA9PrTXvoPFhm2SeLiVy3fIcIyjweaKWr%2BFGHWmtTpH5jjXfUEtlRC1c9cIk11nhFVOwBGIj5o93rXheNjHYvmJxbI1Pw2crOc1ESohjT9dXCdc6%2Bjfp%2FWBvzRyybFwE5t8BIsgNgcTPbawFotw%3D%3D => generated 16491 bytes in 141 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 93/271] 117.136.7.65 () {40 vars in 1034 bytes} [Tue Feb 18 13:38:29 2020] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 57/272] 117.136.7.65 () {40 vars in 1036 bytes} [Tue Feb 18 13:38:29 2020] GET /static/css/reset.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 71/273] 117.136.7.65 () {40 vars in 1041 bytes} [Tue Feb 18 13:38:29 2020] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 58/274] 117.136.7.65 () {40 vars in 1033 bytes} [Tue Feb 18 13:38:29 2020] GET /static/js/jquery-ui.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 53/275] 117.136.7.65 () {38 vars in 956 bytes} [Tue Feb 18 13:38:29 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 94/276] 117.136.7.65 () {40 vars in 1017 bytes} [Tue Feb 18 13:38:29 2020] GET /static/js/slide.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 72/277] 117.136.7.65 () {40 vars in 1083 bytes} [Tue Feb 18 13:38:30 2020] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 73/278] 117.136.7.65 () {40 vars in 1085 bytes} [Tue Feb 18 13:38:30 2020] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 59/279] 117.136.7.65 () {40 vars in 1043 bytes} [Tue Feb 18 13:38:33 2020] GET /user/seeyou => generated 12602 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 60/280] 117.136.7.65 () {38 vars in 831 bytes} [Tue Feb 18 13:38:33 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 74/281] 117.136.7.65 () {38 vars in 1236 bytes} [Tue Feb 18 13:38:35 2020] GET /user/seeyou?nsukey=uYGJ2meX6MCKqUKuxDBC9G%2BpVY15EeFyKbxt1TpjuWwoUNN5mLDjqj42fVIJGa2Z4kajLQqqBjKjgloDqHZHbrjDkCt%2FuhTKw1SU1yIDcGVTIVjD0sWFPxcBv0LTIapGFemekqZV1GbB7Oihe2fdtm454UGIeTK7NlUVJwHuIN8NAp59layug56bpsR3lVtItIj5%2FypyZ8CA6WO9%2FQXvpQ%3D%3D => generated 12602 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 54/282] 117.136.7.65 () {38 vars in 1067 bytes} [Tue Feb 18 13:38:35 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+redis中没有缓存，开始设置缓存
+[pid: 28512|app: 0|req: 75/283] 120.132.1.226 () {38 vars in 759 bytes} [Tue Feb 18 13:54:36 2020] GET / => generated 16491 bytes in 115 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 95/284] 120.132.1.226 () {38 vars in 675 bytes} [Tue Feb 18 13:54:36 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 55/285] 120.132.1.226 () {40 vars in 827 bytes} [Tue Feb 18 13:54:38 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 61/286] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 13:54:39 2020] GET /static/js/register.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 56/287] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 13:54:39 2020] GET /static/images/logo02.png => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 96/288] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:54:39 2020] GET /static/js/zj.js => generated 77 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 76/289] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:54:39 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 62/290] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 13:54:39 2020] GET /static/images/interval_line.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 63/291] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 13:54:39 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 57/292] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 13:54:47 2020] POST /user/register => generated 0 bytes in 185 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 97/293] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 13:54:47 2020] GET / => generated 16491 bytes in 78 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 98/294] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 13:54:48 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 99/295] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 13:56:20 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 100/298] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 13:56:20 2020] GET /static/js/register.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 77/298] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:56:20 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 64/298] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 13:56:20 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 65/299] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:56:20 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 78/300] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 13:56:34 2020] POST /user/register => generated 0 bytes in 294 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 101/301] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 13:56:34 2020] GET / => generated 16491 bytes in 107 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 102/302] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 13:56:35 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 79/303] 123.125.67.160 () {34 vars in 488 bytes} [Tue Feb 18 13:57:41 2020] GET / => generated 16491 bytes in 158 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 80/304] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 13:58:13 2020] GET /user/register => generated 5529 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 58/305] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:58:13 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 66/306] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 13:58:13 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 103/307] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 13:58:13 2020] GET /static/js/register.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 67/308] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 13:58:13 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 104/309] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 13:58:21 2020] POST /user/register => generated 0 bytes in 197 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 105/310] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 13:58:21 2020] GET / => generated 16491 bytes in 86 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 106/311] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 13:58:21 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 107/312] 120.132.1.226 () {40 vars in 827 bytes} [Tue Feb 18 14:14:34 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 108/314] 120.132.1.226 () {40 vars in 755 bytes} [Tue Feb 18 14:14:34 2020] GET /static/js/register.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 59/314] 120.132.1.226 () {38 vars in 688 bytes} [Tue Feb 18 14:14:34 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 68/315] 120.132.1.226 () {40 vars in 797 bytes} [Tue Feb 18 14:14:34 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 81/316] 120.132.1.226 () {38 vars in 688 bytes} [Tue Feb 18 14:14:34 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 69/317] 120.132.1.226 () {40 vars in 817 bytes} [Tue Feb 18 14:14:34 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 60/318] 120.132.1.226 () {40 vars in 821 bytes} [Tue Feb 18 14:14:34 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 70/319] 120.132.1.226 () {48 vars in 982 bytes} [Tue Feb 18 14:14:44 2020] POST /user/register => generated 0 bytes in 190 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 109/320] 120.132.1.226 () {42 vars in 845 bytes} [Tue Feb 18 14:14:44 2020] GET / => generated 16491 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 110/321] 120.132.1.226 () {38 vars in 675 bytes} [Tue Feb 18 14:14:44 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 111/322] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:18:25 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 112/323] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:18:25 2020] GET /static/js/register.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 61/324] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:18:25 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28514|app: 0|req: 113/325] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:18:25 2020] GET /static/js/zj.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 82/326] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 14:18:25 2020] GET /static/images/interval_line.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 62/327] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 14:18:25 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 71/328] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:18:35 2020] POST /user/register => generated 0 bytes in 323 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 83/329] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:18:36 2020] GET / => generated 16491 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 114/330] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:18:36 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 115/331] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:20:08 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 116/332] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:20:08 2020] GET /static/js/register.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 84/333] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:20:08 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28511|app: 0|req: 63/334] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:20:08 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28512|app: 0|req: 85/335] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:20:08 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 72/336] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:20:26 2020] POST /user/register => generated 0 bytes in 196 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 86/337] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:20:27 2020] GET / => generated 16491 bytes in 79 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 117/338] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:20:27 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 118/339] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:39:15 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 119/340] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:39:15 2020] GET /static/js/register.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 87/341] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:39:15 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 88/342] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:39:15 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 73/343] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:39:15 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28513|app: 0|req: 74/344] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 14:39:15 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 64/345] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 14:39:15 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28513|app: 0|req: 75/346] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:39:22 2020] POST /user/register => generated 0 bytes in 210 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 89/347] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:39:22 2020] GET / => generated 16491 bytes in 88 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 120/348] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:39:22 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 121/349] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:43:08 2020] GET /user/register => generated 5529 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 122/350] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:43:08 2020] GET /static/js/register.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28511|app: 0|req: 65/351] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:43:08 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28513|app: 0|req: 76/352] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:43:08 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 90/353] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 14:43:08 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28512|app: 0|req: 91/354] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 14:43:08 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 28511|app: 0|req: 66/355] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:43:16 2020] POST /user/register => generated 0 bytes in 210 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 92/356] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:43:17 2020] GET / => generated 16491 bytes in 87 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 123/357] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:43:17 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 124/358] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:44:09 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 67/360] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:44:09 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28512|app: 0|req: 93/360] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:44:09 2020] GET /static/js/register.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 77/361] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:44:09 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 28513|app: 0|req: 78/362] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:44:09 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 28511|app: 0|req: 68/363] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:44:15 2020] POST /user/register => generated 0 bytes in 224 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 28512|app: 0|req: 94/364] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:44:16 2020] GET / => generated 16491 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 28514|app: 0|req: 125/365] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:44:16 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 28514|app: 0|req: 126/366] 218.155.249.137 () {22 vars in 230 bytes} [Tue Feb 18 14:46:02 2020] GET / => generated 16491 bytes in 90 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 28515)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 14:50:17 2020] ***
+compiled with version: 5.4.0 20160609 on 17 February 2020 03:38:26
+os: Linux-4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019
+nodename: instance-2vjzgrd5
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/Fresh_farmers
+writing pidfile to uwsgi.pid
+detected binary path: /root/.virtualenvs/sunong/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/Fresh_farmers
+your processes number limit is 7833
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40921 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.10 (default, Dec 19 2019, 23:04:32)  [GCC 5.4.0 20160609]
+PEP 405 virtualenv detected: /root/.virtualenvs/sunong
+Set PythonHome to /root/.virtualenvs/sunong
+Python main interpreter initialized at 0xc10290
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xc10290 pid: 5934 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5934)
+spawned uWSGI worker 1 (pid: 5936, cores: 2)
+spawned uWSGI worker 2 (pid: 5937, cores: 2)
+spawned uWSGI worker 3 (pid: 5938, cores: 2)
+spawned uWSGI worker 4 (pid: 5941, cores: 2)
+spawned uWSGI http 1 (pid: 5942)
+[pid: 5941|app: 0|req: 1/1] 120.132.1.226 () {38 vars in 759 bytes} [Tue Feb 18 14:53:16 2020] GET / => generated 16491 bytes in 642 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 2/2] 120.132.1.226 () {38 vars in 675 bytes} [Tue Feb 18 14:53:17 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 1/3] 120.132.1.226 () {38 vars in 703 bytes} [Tue Feb 18 14:53:17 2020] GET /favicon.ico => generated 77 bytes in 382 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 2/4] 120.132.1.226 () {40 vars in 827 bytes} [Tue Feb 18 14:53:18 2020] GET /user/register => generated 5529 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 3/5] 120.132.1.226 () {40 vars in 755 bytes} [Tue Feb 18 14:53:18 2020] GET /static/js/register.js => generated 0 bytes in 6 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 4/6] 120.132.1.226 () {40 vars in 797 bytes} [Tue Feb 18 14:53:18 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5941|app: 0|req: 5/7] 120.132.1.226 () {40 vars in 817 bytes} [Tue Feb 18 14:53:18 2020] GET /static/images/interval_line.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 6/8] 120.132.1.226 () {40 vars in 821 bytes} [Tue Feb 18 14:53:18 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5936|app: 0|req: 1/9] 120.132.1.226 () {38 vars in 688 bytes} [Tue Feb 18 14:53:18 2020] GET /static/js/zj.js => generated 77 bytes in 418 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 7/10] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:53:25 2020] POST /user/register => generated 0 bytes in 296 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 8/11] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:53:26 2020] GET / => generated 16491 bytes in 84 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 9/12] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:53:26 2020] GET /static/js/zj.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 10/13] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:56:07 2020] GET /user/register => generated 5529 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 11/14] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:56:07 2020] GET /static/js/register.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5936|app: 0|req: 2/15] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:56:07 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5936|app: 0|req: 3/17] 120.132.1.226 () {40 vars in 818 bytes} [Tue Feb 18 14:56:07 2020] GET /static/images/interval_line.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5941|app: 0|req: 12/17] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:56:07 2020] GET /static/js/zj.js => generated 77 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 13/18] 120.132.1.226 () {40 vars in 822 bytes} [Tue Feb 18 14:56:07 2020] GET /static/images/register_banner.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5937|app: 0|req: 1/19] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:56:07 2020] GET /static/images/logo02.png => generated 0 bytes in 411 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 14/20] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:56:16 2020] POST /user/register => generated 0 bytes in 233 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+redis中没有缓存，开始设置缓存
+[pid: 5941|app: 0|req: 15/21] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:56:16 2020] GET / => generated 16491 bytes in 107 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 16/22] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:56:16 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5937|app: 0|req: 2/23] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:56:48 2020] GET /user/register => generated 5529 bytes in 40 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 17/24] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:56:48 2020] GET /static/js/register.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5936|app: 0|req: 4/25] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:56:48 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5937|app: 0|req: 3/26] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:56:48 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 18/27] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:56:58 2020] POST /user/register => generated 0 bytes in 197 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 19/28] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:56:58 2020] GET / => generated 16491 bytes in 87 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 20/29] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:56:58 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5937|app: 0|req: 4/30] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:57:12 2020] GET /user/register => generated 5529 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 5936|app: 0|req: 5/31] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:57:12 2020] GET /static/images/logo02.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5938|app: 0|req: 3/32] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:57:12 2020] GET /static/js/register.js => generated 0 bytes in 12 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5937|app: 0|req: 5/33] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:57:12 2020] GET /static/js/zj.js => generated 77 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 4/34] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:57:12 2020] GET /static/js/zj.js => generated 77 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5936|app: 0|req: 6/35] 120.132.1.226 () {48 vars in 983 bytes} [Tue Feb 18 14:57:21 2020] POST /user/register => generated 0 bytes in 301 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 5/36] 120.132.1.226 () {42 vars in 846 bytes} [Tue Feb 18 14:57:22 2020] GET / => generated 16491 bytes in 220 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 21/37] 120.132.1.226 () {38 vars in 676 bytes} [Tue Feb 18 14:57:22 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5937|app: 0|req: 6/38] 120.132.1.226 () {40 vars in 828 bytes} [Tue Feb 18 14:57:59 2020] GET /user/register => generated 5529 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 22/39] 120.132.1.226 () {40 vars in 756 bytes} [Tue Feb 18 14:57:59 2020] GET /static/js/register.js => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 5938|app: 0|req: 6/40] 120.132.1.226 () {38 vars in 689 bytes} [Tue Feb 18 14:57:59 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5936|app: 0|req: 7/41] 120.132.1.226 () {40 vars in 798 bytes} [Tue Feb 18 14:57:59 2020] GET /static/images/logo02.png => generated 0 bytes in 2 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 5938|app: 0|req: 7/42] 120.132.1.226 () {48 vars in 981 bytes} [Tue Feb 18 14:58:16 2020] POST /user/register => generated 0 bytes in 270 msecs (HTTP/1.1 302) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 23/43] 120.132.1.226 () {42 vars in 845 bytes} [Tue Feb 18 14:58:16 2020] GET / => generated 16491 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 24/44] 120.132.1.226 () {38 vars in 675 bytes} [Tue Feb 18 14:58:17 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 8/45] 120.132.1.226 () {36 vars in 983 bytes} [Tue Feb 18 14:58:27 2020] GET /user/active/eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4MjAwOTA5NiwiZXhwIjoxNTgyMDEyNjk2fQ.eyJjb25maXJtIjozMH0.F1WAczKZIb37uHplaQ0icK8Wl9PFHG-jWzCmJbr4s6u5UNt6hyqu6Fa3cPrt98P_s-Uuu29cvGJKtbScApnjSQ => generated 0 bytes in 26 msecs (HTTP/1.1 302) 4 headers in 133 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 9/46] 120.132.1.226 () {36 vars in 633 bytes} [Tue Feb 18 14:58:27 2020] GET /user/login => generated 4983 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 5936|app: 0|req: 8/47] 120.132.1.226 () {38 vars in 680 bytes} [Tue Feb 18 14:58:28 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5941|app: 0|req: 25/48] 120.132.1.226 () {38 vars in 668 bytes} [Tue Feb 18 14:58:28 2020] GET /static/css/main.css => generated 22992 bytes in 7 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 5941|app: 0|req: 26/49] 120.132.1.226 () {38 vars in 722 bytes} [Tue Feb 18 14:58:28 2020] GET /static/images/logo.png => generated 9190 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 5936|app: 0|req: 9/50] 120.132.1.226 () {38 vars in 670 bytes} [Tue Feb 18 14:58:28 2020] GET /static/css/reset.css => generated 664 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 139 bytes (0 switches on core 1)
+[pid: 5937|app: 0|req: 7/51] 120.132.1.226 () {38 vars in 738 bytes} [Tue Feb 18 14:58:28 2020] GET /static/images/login_banner.png => generated 175227 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 27/52] 120.132.1.226 () {38 vars in 728 bytes} [Tue Feb 18 14:58:28 2020] GET /static/images/icons02.png => generated 2071 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 28/53] 120.132.1.226 () {34 vars in 478 bytes} [Tue Feb 18 14:58:29 2020] GET /favicon.ico => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 5938|app: 0|req: 10/54] 120.132.1.226 () {44 vars in 786 bytes} [Tue Feb 18 14:58:39 2020] POST /user/login => generated 0 bytes in 194 msecs (HTTP/1.1 302) 8 headers in 534 bytes (1 switches on core 0)
+cart_30
+[pid: 5938|app: 0|req: 11/55] 120.132.1.226 () {40 vars in 739 bytes} [Tue Feb 18 14:58:40 2020] GET / => generated 16592 bytes in 86 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 29/56] 120.132.1.226 () {38 vars in 720 bytes} [Tue Feb 18 14:58:40 2020] GET /static/js/slide.js => generated 2473 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 4 headers in 154 bytes (0 switches on core 0)
+[pid: 5936|app: 0|req: 10/57] 120.132.1.226 () {38 vars in 736 bytes} [Tue Feb 18 14:58:40 2020] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 5938|app: 0|req: 12/58] 120.132.1.226 () {38 vars in 744 bytes} [Tue Feb 18 14:58:40 2020] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 16 msecs via sendfile() (HTTP/1.1 200) 4 headers in 155 bytes (0 switches on core 0)
+[pid: 5941|app: 0|req: 30/59] 120.132.1.226 () {38 vars in 714 bytes} [Tue Feb 18 14:58:40 2020] GET /static/js/zj.js => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 31/60] 120.132.1.226 () {38 vars in 758 bytes} [Tue Feb 18 14:58:43 2020] GET /static/images/icons.png => generated 5931 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 0)
+[pid: 5937|app: 0|req: 8/61] 120.132.1.226 () {38 vars in 721 bytes} [Tue Feb 18 14:59:03 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 5936|app: 0|req: 11/62] 120.132.1.226 () {38 vars in 743 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/css/style.css => generated 28412 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 5938|app: 0|req: 13/63] 120.132.1.226 () {38 vars in 757 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/css/font-awesome.css => generated 37414 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 141 bytes (0 switches on core 1)
+[pid: 5937|app: 0|req: 9/64] 120.132.1.226 () {38 vars in 751 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/css/bootstrap.css => generated 178152 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 0)
+[pid: 5937|app: 0|req: 10/65] 120.132.1.226 () {38 vars in 795 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 32/66] 120.132.1.226 () {38 vars in 791 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/g1.jpg => generated 57139 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 5938|app: 0|req: 14/67] 120.132.1.226 () {38 vars in 791 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/g2.jpg => generated 462392 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 5936|app: 0|req: 12/68] 120.132.1.226 () {38 vars in 791 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/b3.jpg => generated 167619 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 33/69] 120.132.1.226 () {38 vars in 797 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/blog1.jpg => generated 186416 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 5941|app: 0|req: 34/70] 120.132.1.226 () {38 vars in 797 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/blog2.jpg => generated 139139 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 35/71] 120.132.1.226 () {38 vars in 797 bytes} [Tue Feb 18 14:59:04 2020] GET /static/cpts_1971_cxu/images/blog3.jpg => generated 129356 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 5941|app: 0|req: 37/72] 120.132.1.226 () {40 vars in 806 bytes} [Tue Feb 18 14:59:06 2020] GET /static/cpts_1971_cxu/fonts/fontawesome-webfont.eot? => generated 165742 bytes in 5 msecs via sendfile() (HTTP/1.1 200) 4 headers in 163 bytes (0 switches on core 0)
+Tue Feb 18 14:59:06 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during HEAD /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 5941|app: 0|req: 37/73] 120.132.1.226 () {36 vars in 663 bytes} [Tue Feb 18 14:59:06 2020] HEAD /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 38 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[pid: 5938|app: 0|req: 15/74] 120.132.1.226 () {38 vars in 797 bytes} [Tue Feb 18 14:59:06 2020] GET /static/cpts_1971_cxu/images/about.jpg => generated 79569 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 5938|app: 0|req: 16/75] 120.132.1.226 () {38 vars in 801 bytes} [Tue Feb 18 14:59:06 2020] GET /static/cpts_1971_cxu/images/banner1.jpg => generated 114240 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[pid: 5938|app: 0|req: 17/76] 120.132.1.226 () {38 vars in 801 bytes} [Tue Feb 18 14:59:06 2020] GET /static/cpts_1971_cxu/images/banner2.jpg => generated 139139 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 39158] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 14:59:07 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 5941|app: 0|req: 38/77] 120.132.1.226 () {42 vars in 792 bytes} [Tue Feb 18 14:59:06 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 761 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 0)
+[pid: 5938|app: 0|req: 18/78] 120.132.1.226 () {36 vars in 679 bytes} [Tue Feb 18 14:59:24 2020] GET /user/seeyou => generated 12602 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 5941|app: 0|req: 39/79] 120.132.1.226 () {38 vars in 795 bytes} [Tue Feb 18 14:59:24 2020] GET /static/cpts_1971_cxu/images/logo.png => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 45814] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 14:59:24 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during HEAD /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 5941|app: 0|req: 40/80] 120.132.1.226 () {36 vars in 663 bytes} [Tue Feb 18 14:59:24 2020] HEAD /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 37 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 0)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 45558] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 14:59:24 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 5938|app: 0|req: 20/81] 120.132.1.226 () {44 vars in 861 bytes} [Tue Feb 18 14:59:24 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 120 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 0)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 46070] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Tue Feb 18 14:59:26 2020 - uwsgi_response_sendfile_do(): Connection reset by peer [core/writer.c line 655] during GET /static/cpts_1971_cxu/music/xun.mp3 (120.132.1.226)
+OSError: write error
+[pid: 5938|app: 0|req: 20/82] 120.132.1.226 () {42 vars in 792 bytes} [Tue Feb 18 14:59:24 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 1660 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 5941|app: 0|req: 41/83] 120.132.1.226 () {46 vars in 833 bytes} [Tue Feb 18 14:59:24 2020] GET /static/cpts_1971_cxu/music/xun.mp3 => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.1 200) 4 headers in 145 bytes (2 switches on core 1)
+[uwsgi-http key: 106.13.66.207:8000 client_addr: 120.132.1.226 client_port: 46326] hr_write(): Connection reset by peer [plugins/http/http.c line 565]

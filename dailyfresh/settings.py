@@ -25,9 +25,9 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = 'l1$ip-%%4w)wza&t$nd_ok5imd88n4y6y6dk%$u26s=z=n^las'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = "*"
 
 
 # Application definition
@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'dailyfresh',
         'USER':'root',
         'PASSWORD':'mysql',
-        'HOST':'192.168.206.129',
+        'HOST':'127.0.0.1',
         'PORT':3306,
     }
 }
@@ -133,7 +133,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]  DEBUG=False时需要STATIC_ROOT，需要在url配置静态文件路由缺一不可
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #  富文本编辑器的配置
 TINYMCE_DEFAULT_CONFIG = {
     'theme': 'advanced',
@@ -159,7 +160,7 @@ EMAIL_FROM = '基于python在线农产品直销平台——速农鲜生<18846762
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.206.129:6379/9",
+        "LOCATION": "redis://127.0.0.1:6379/9",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -181,14 +182,14 @@ DEFAULT_FILE_STORAGE='utils.fdfs.storage.FDFSStorage'
 FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
 
 # 设置fdfs存储服务器上nginx的IP和端口号
-FDFS_URL='http://192.168.206.129:8888/'
+FDFS_URL='http://106.13.66.207:8888/'
 
 # 全文检索框架的配置
 HAYSTACK_CONNECTIONS = {
     'default': {
         #使用whoosh引擎
-        #'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        #'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
         #索引文件路径
         'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
     }
