@@ -4,7 +4,7 @@ from django.contrib import admin
 from apps.user import views
 
 from django.contrib.auth.decorators import login_required
-from apps.user.views import RegisterView,ActiveView,LoginView,UserInfoView, UserOrderView, AddressView,LogoutView,Data_analysi,Charts,Seeyou   #导入类视图
+from apps.user.views import RegisterView,ActiveView,LoginView,UserInfoView, UserOrderView, AddressView,LogoutView,Data_analysi,Charts,Seeyou,Indexs   #导入类视图
 
 urlpatterns = [
     # re_path(r'^register$',views.register,name='register'),  #注册
@@ -24,5 +24,5 @@ urlpatterns = [
     re_path(r'analysi$',Data_analysi.as_view(), name='analysi'),   # 数据分析页
     re_path(r'charts$',Charts.as_view(), name='charts'),   # 数据分析页
     re_path(r'seeyou$',Seeyou.as_view(),name='seeyou'),
-    #re_path(r'^indexs$',Indexs.as_view(),name='indexs' ),   
+    re_path(r'^indexs$',Indexs.as_view(),name='indexs' ),   
 ]

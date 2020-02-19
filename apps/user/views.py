@@ -480,6 +480,6 @@ class Seeyou(View):
     def get(self,request):
         return render(request, 'seeyou.html')
 
-#class Indexs(View):
-#    def get(self,request):
-#        return render(request, 'indexs.html')
+class Indexs(View):
+    def get(self,request):
+        return render(request, 'indexs.html')
