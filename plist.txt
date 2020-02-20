@@ -38,3 +38,6 @@ virtualenv==20.0.3
 virtualenv-clone==0.5.3
 virtualenvwrapper==4.8.4
 zipp==2.2.0
+#woziazzheli zuoddflkdjaf
+#jdalfjlsdjfklasdjlfjaslfjlsadjflasjfl;asdjfjkl;
+""asdfjasljdfkjasldfjdajflasdjflflsajfjasl;fjasdfklaf;sadfkjafdjasdfkjasl;fdjaslfjasdlkj
