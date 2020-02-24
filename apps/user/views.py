@@ -415,16 +415,12 @@ class AddressView(LoginrequiredMixin,View):
         # 返回应答 刷新地址页面
         return redirect(reverse('user:address'))  # get请求方式
 
-# http://127.0.0.1:8000/user/analysi
+#  user/analysi
 class Data_analysi(LoginrequiredMixin,View):
     '''准备分析数据获取整理,制作数据接口对接前端'''
     # 这个类
-
     def get(self,request):
-
         user = request.user
-
-
         list = []
         # 条形图数据
         bar_x = []
@@ -452,7 +448,6 @@ class Data_analysi(LoginrequiredMixin,View):
             b = eval(new)
             sector_y.append(b)
 
-
         tiao_x = bar_x[0:8]
         tiao_y = bar_y[0:8]
         for dic in sector_y[7:12]:
@@ -460,26 +455,29 @@ class Data_analysi(LoginrequiredMixin,View):
         bing_x = list
         bing_y = sector_y[7:12]
 
-
         # 临时性跳转，用来测试
         # return redirect(reverse('goods:index'))
         # return JsonResponse({'res': 2, 'errmsg': '非法的支付方式'})
-
         # return JsonResponse({"bar_x": bar_x, "bar_y": bar_y,"sector_x":sector_x,"sector_y":sector_y})
+        # 返回数据分析页面需要的json串
         return HttpResponse(json.dumps((tiao_x,tiao_y,bing_x, bing_y), ensure_ascii=False),content_type="application/json,charset=utf-8")
 
 
 
-# http://127.0.0.1:8000/user/charts
+# user/charts
 class Charts(LoginrequiredMixin,View):
+    """数据分析页"""
     def get(self,request):
         return render(request, 'charts.html')
 
 
 class Seeyou(View):
+    """彩蛋页面"""
     def get(self,request):
         return render(request, 'seeyou.html')
 
+# /user/indexs
 class Indexs(View):
+    """优化后登录页，新增分类登录-用户登录-商家登录-游客浏览-用户注册"""
     def get(self,request):
         return render(request, 'indexs.html')
