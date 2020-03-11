@@ -12,6 +12,54 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import sys
+
+import raven
+import toml
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+ENV_MODE = os.environ.get('ENV_MODE')
+with open('config/config_ENV_MODE.toml') as f:
+    config = toml.load(f)
+
+#mysql
+ENV_DATABASE_ENGINE = config['database']['engine']
+ENV_DATABASE_USER = config['database']['user']
+ENV_DATABASE_PASSWORD = config['database']['password']
+ENV_DATABASE_HOST = config['database']['host']
+ENV_DATABASE_PORT = config['database']['port']
+ENV_DATABASE_NAME = config['database']['database']
+
+
+# redis
+ENV_REDIS_HOST = config['redis']['host']
+ENV_REDIS_PORT = config['redis']['port']
+
+
+# Email
+ENV_EMAIL_BACKEND = config['Email']['EMAIL_BACKEND']
+ENV_EMAIL_HOST = config['Email']['EMAIL_HOST']
+ENV_EMAIL_PORT = config['Email']['EMAIL_PORT']
+ENV_EMAIL_HOST_PASSWORD = config['Email']['EMAIL_HOST_PASSWORD']
+ENV_EMAIL_HOST_USER = config['Email']['EMAIL_HOST_USER']
+ENV_EMAIL_FROM = config['Email']['EMAIL_FROM']
+
+
+# Case_django
+ENV_CACHES_BACKEND = config['case']['BACKEND']
+ENV_CACHES_LOCATION = config['case']['LOCATION']
+ENV_OPTIONS_BACKEND = config['case']['CLIENT_CLASS']
+
+
+# fdfs
+ENV_FDFS_CLIENT_CONF = config['fdfs']['FDFS_CLIENT_CONF']
+ENV_FDFS_URL = config['fdfs']['FDFS_URL']
+
+
+
+
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -83,12 +131,12 @@ WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dailyfresh',
-        'USER':'root',
-        'PASSWORD':'mysql',
-        'HOST':'127.0.0.1',
-        'PORT':3306,
+        'ENGINE': ENV_DATABASE_ENGINE,
+        'NAME': ENV_DATABASE_NAME,
+        'USER': ENV_DATABASE_USER,
+        'PASSWORD': ENV_DATABASE_PASSWORD ,
+        'HOST': ENV_DATABASE_HOST,
+        'PORT':ENV_DATABASE_PORT,
     }
 }
 # django 认证系统使用的模型类
@@ -144,25 +192,25 @@ TINYMCE_DEFAULT_CONFIG = {
 
 
 # 发送邮件配置
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = ENV_EMAIL_BACKEND
 # smpt服务地址
-EMAIL_HOST = 'smtp.163.com'
-EMAIL_PORT = 25
+EMAIL_HOST = ENV_EMAIL_HOST
+EMAIL_PORT = ENV_EMAIL_PORT
 # 发送邮件的邮箱
-EMAIL_HOST_USER = '18846762805@163.com'
+EMAIL_HOST_USER = ENV_EMAIL_HOST_USER
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'zX19980820'
+EMAIL_HOST_PASSWORD = ENV_EMAIL_HOST_PASSWORD
 # 收件人看到的发件人
-EMAIL_FROM = '基于python在线农产品直销平台——速农鲜生<18846762805@163.com>'
+EMAIL_FROM = ENV_EMAIL_FROM
 
 
 # Django的缓存配置
 CACHES = {
     "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/9",
+        "BACKEND": ENV_CACHES_BACKEND,
+        "LOCATION": ENV_CACHES_LOCATION,
         "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CLIENT_CLASS":ENV_OPTIONS_BACKEND,
         }
     }
 }
@@ -178,11 +226,12 @@ LOGIN_URL='/user/login'
 # DEFAULT_FILE_STORAGE='utils.fdfs.storage.FDFSStorage'
 DEFAULT_FILE_STORAGE='utils.fdfs.storage.FDFSStorage'
 
-# 设置fdfs使用的client.conf文件路径
-FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
 
+
+# 设置fdfs使用的client.conf文件路径
+FDFS_CLIENT_CONF = ENV_FDFS_CLIENT_CONF
 # 设置fdfs存储服务器上nginx的IP和端口号
-FDFS_URL='http://106.13.66.207:8888/'
+FDFS_URL = ENV_FDFS_URL
 
 # 全文检索框架的配置
 HAYSTACK_CONNECTIONS = {
