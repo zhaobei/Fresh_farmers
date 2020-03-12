@@ -28,3 +28,4 @@ CLIENT_CLASS="django_redis.client.DefaultClient"
 [ fdfs ]
 FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
 FDFS_URL='http://106.13.66.207:8888/'
+

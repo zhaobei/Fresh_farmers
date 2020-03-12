@@ -18,8 +18,8 @@ import toml
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
-ENV_MODE = os.environ.get('ENV_MODE')
-with open('config/config_ENV_MODE.toml') as f:
+# ENV_MODE = os.environ.get('ENV_MODE')
+with open('./config/config_env.toml') as f:
     config = toml.load(f)
 
 #mysql

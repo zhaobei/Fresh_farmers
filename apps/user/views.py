@@ -139,11 +139,13 @@ class RegisterView(View):
         if user:
             # 此用户名已存在
             return render(request, 'register.html', {'errmsg': '用户名已存在'})
-
+        print("业务出里")
         # 业务处理：进行用户注册
         user = User.objects.create_user(username=user_name, email=email, password=password)
         user.is_active = 0
         user.save()
+
+        print("数据存储完成")
 
         # 加密用户的身份信息，生成激活token
         serializer = Serializer(settings.SECRET_KEY,3600)
@@ -151,10 +153,12 @@ class RegisterView(View):
         token = serializer.dumps(info)  #返回的数据是bytes（字节流）
         token = token.decode('utf8')
 
+        print("加密信息完成")
+
         # 发送邮件
         send_register_active_enaile.delay(email,user_name,token)
 
-
+        print("邮件任务发出")
         # 返回应答
         return redirect(reverse('goods:index'))
 
